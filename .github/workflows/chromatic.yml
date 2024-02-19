@@ -22,4 +22,4 @@ jobs:
           cypress: true
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
         env:
-          CHROMATIC_ARCHIVE_LOCATION=./custom/dir
+          CHROMATIC_ARCHIVE_LOCATION=${{ secrets.CHROMATIC_ARCHIVE_LOCATION }}
