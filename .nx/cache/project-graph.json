@@ -87,29 +87,19 @@
             "configurations": {}
           },
           "build-storybook": {
-            "options": {
-              "cwd": "apps/design-system",
-              "command": "storybook build"
-            },
-            "cache": true,
+            "executor": "@nx/storybook:build",
             "outputs": [
-              "{workspaceRoot}/{projectRoot}/storybook-static",
-              "{options.output-dir}",
-              "{options.outputDir}",
-              "{options.o}"
+              "{options.outputDir}"
             ],
-            "inputs": [
-              "production",
-              "^production",
-              {
-                "externalDependencies": [
-                  "storybook",
-                  "@storybook/test-runner"
-                ]
+            "options": {
+              "configDir": "apps/design-system/.storybook",
+              "outputDir": "dist/storybook/design-system"
+            },
+            "configurations": {
+              "ci": {
+                "quiet": true
               }
-            ],
-            "executor": "nx:run-commands",
-            "configurations": {}
+            }
           },
           "storybook": {
             "executor": "@nx/storybook:storybook",
@@ -5460,6 +5450,15 @@
         "hash": "sha512-WkvixYHncLXpAeEnktjfYIffJ3b6poymB+wDbHKK/tg7m3N8llLlys64nvyeb7DbZ/+1yJls3K1DVbk1AIEHrQ=="
       }
     },
+    "npm:@storybook/addons": {
+      "type": "npm",
+      "name": "npm:@storybook/addons",
+      "data": {
+        "version": "7.6.16",
+        "packageName": "@storybook/addons",
+        "hash": "sha512-6QibnKs7UHYuJFmRfR70gSs3W9prHZ51Tl0Cj7ShgkPKdavBRXD89oNp0hIw+Mhdh8IlUCBViKRhe50QFa4DjQ=="
+      }
+    },
     "npm:@storybook/blocks": {
       "type": "npm",
       "name": "npm:@storybook/blocks",
@@ -8394,6 +8393,15 @@
         "hash": "sha512-SEP5kJpfGYqYKpBrj5XU3ahw5p5GOHJ0U5ssOSQ/WBVdwkD2Dzlce95exQTs3jOVWPPKLBN2rlEWkCK7dSmLvg=="
       }
     },
+    "npm:babel-plugin-macros@3.1.0": {
+      "type": "npm",
+      "name": "npm:babel-plugin-macros@3.1.0",
+      "data": {
+        "version": "3.1.0",
+        "packageName": "babel-plugin-macros",
+        "hash": "sha512-Cg7TFGpIr01vOQNODXOOaGz2NpCU5gl8x1qJFbb6hbZxR7XrcE2vtbAsTAbJ7/xwJtUuJEw8K8Zr/AE0LHlesg=="
+      }
+    },
     "npm:babel-plugin-polyfill-corejs2": {
       "type": "npm",
       "name": "npm:babel-plugin-polyfill-corejs2",
@@ -9022,6 +9030,15 @@
         "version": "1.1.4",
         "packageName": "chownr",
         "hash": "sha512-jJ0bqzaylmJtVnNgzTeSOs8DPavpbYgEr/b0YL8/2GO3xJEhInFmhKMUnEJQjZumK7KXGFhUy89PrsJWlakBVg=="
+      }
+    },
+    "npm:chromatic": {
+      "type": "npm",
+      "name": "npm:chromatic",
+      "data": {
+        "version": "10.9.6",
+        "packageName": "chromatic",
+        "hash": "sha512-1MoT+/U+vQwEiq2GuehPyStbqhxqHmM1B9pdpVU1dKh26userQg1FyOFYifkTgy+9reo2w2p7sAbc0JRd2kzlA=="
       }
     },
     "npm:chrome-trace-event": {
@@ -27709,6 +27726,11 @@
       },
       {
         "source": "npm:@storybook/addon-designs",
+        "target": "npm:@storybook/addons",
+        "type": "static"
+      },
+      {
+        "source": "npm:@storybook/addon-designs",
         "target": "npm:@storybook/components",
         "type": "static"
       },
@@ -27994,6 +28016,23 @@
       {
         "source": "npm:@storybook/addon-viewport",
         "target": "npm:memoizerific",
+        "type": "static"
+      }
+    ],
+    "npm:@storybook/addons": [
+      {
+        "source": "npm:@storybook/addons",
+        "target": "npm:@storybook/manager-api",
+        "type": "static"
+      },
+      {
+        "source": "npm:@storybook/addons",
+        "target": "npm:@storybook/preview-api",
+        "type": "static"
+      },
+      {
+        "source": "npm:@storybook/addons",
+        "target": "npm:@storybook/types",
         "type": "static"
       }
     ],
@@ -38309,6 +38348,30 @@
       {
         "source": "npm:jest-circus",
         "target": "npm:stack-utils",
+        "type": "static"
+      }
+    ],
+    "npm:babel-plugin-macros@3.1.0": [
+      {
+        "source": "npm:babel-plugin-macros@3.1.0",
+        "target": "npm:@babel/runtime",
+        "type": "static"
+      },
+      {
+        "source": "npm:babel-plugin-macros@3.1.0",
+        "target": "npm:cosmiconfig@7.1.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:babel-plugin-macros@3.1.0",
+        "target": "npm:resolve",
+        "type": "static"
+      }
+    ],
+    "npm:dedent@1.5.1": [
+      {
+        "source": "npm:dedent@1.5.1",
+        "target": "npm:babel-plugin-macros@3.1.0",
         "type": "static"
       }
     ],

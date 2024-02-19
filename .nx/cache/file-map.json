@@ -61,6 +61,7 @@
     "@vitest/ui": "^1.0.4",
     "babel-jest": "^29.4.1",
     "babel-plugin-styled-components": "1.10.7",
+    "chromatic": "^10.9.6",
     "commander": "^12.0.0",
     "cypress": "^13.0.0",
     "eslint": "8.48.0",
@@ -153,73 +154,299 @@
     }
   ],
   "fileMap": {
-    "nonProjectFiles": [
-      {
-        "file": ".editorconfig",
-        "hash": "5443105041930014821"
-      },
-      {
-        "file": ".eslintignore",
-        "hash": "7663861978715868291"
-      },
-      {
-        "file": ".eslintrc.json",
-        "hash": "17866138117546000433"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "1960289168718619015"
-      },
-      {
-        "file": ".prettierignore",
-        "hash": "8865097869854018350"
-      },
-      {
-        "file": ".prettierrc",
-        "hash": "5206727499534837224"
-      },
-      {
-        "file": ".vscode/extensions.json",
-        "hash": "4637156562308165301"
-      },
-      {
-        "file": "README.md",
-        "hash": "3188545022132879006"
-      },
-      {
-        "file": "jest.config.ts",
-        "hash": "8934013352002371476"
-      },
-      {
-        "file": "jest.preset.js",
-        "hash": "11039555799044607920"
-      },
-      {
-        "file": "nx.json",
-        "hash": "1334210432696704353"
-      },
-      {
-        "file": "package-lock.json",
-        "hash": "14579290320442662921"
-      },
-      {
-        "file": "package.json",
-        "hash": "8770294554912924898"
-      },
-      {
-        "file": "tsconfig.base.json",
-        "hash": "16719765727044244939"
-      },
-      {
-        "file": "types/svg.d.ts",
-        "hash": "1425613786169501999"
-      },
-      {
-        "file": "types/themes.d.ts",
-        "hash": "5538604380583768595"
-      }
-    ],
     "projectFileMap": {
+      "theme": [
+        {
+          "file": "libs/shared/theme/.babelrc",
+          "hash": "5712476190361238632"
+        },
+        {
+          "file": "libs/shared/theme/.eslintrc.json",
+          "hash": "15946965712701950674"
+        },
+        {
+          "file": "libs/shared/theme/README.md",
+          "hash": "3359207826875452305"
+        },
+        {
+          "file": "libs/shared/theme/project.json",
+          "hash": "15517733592465156539"
+        },
+        {
+          "file": "libs/shared/theme/src/index.ts",
+          "hash": "3552240282930762949"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/formatters/generateCode.ts",
+          "hash": "10211231898504397255",
+          "deps": [
+            "npm:fs"
+          ]
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/formatters/index.ts",
+          "hash": "10684072985312019024"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/formatters/parseJsonToThemes.ts",
+          "hash": "15245771880628533009",
+          "deps": [
+            "npm:style-dictionary"
+          ]
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/generate-code/generateCollectionsTypeCode.ts",
+          "hash": "2782551927379227960",
+          "deps": [
+            "npm:fs"
+          ]
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/generate-code/generateComponentsTypesCode.ts",
+          "hash": "16792806168087978427",
+          "deps": [
+            "npm:fs"
+          ]
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/generate-code/generateIndexFile.ts",
+          "hash": "11197476649799743348",
+          "deps": [
+            "npm:fs"
+          ]
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/generate-code/generateRootTypesIndex.ts",
+          "hash": "8233774598117898689",
+          "deps": [
+            "npm:fs"
+          ]
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/generate-code/generateThemeTypeCode.ts",
+          "hash": "17502317527975468621",
+          "deps": [
+            "npm:fs"
+          ]
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/generate-code/index.ts",
+          "hash": "348231653323373316"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/generateThemesAction.ts",
+          "hash": "1952593225445721491",
+          "deps": [
+            "npm:fs",
+            "npm:style-dictionary"
+          ]
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/helpers/helpers.ts",
+          "hash": "13692180265591216690"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/helpers/index.ts",
+          "hash": "15041905854315984094"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/index.ts",
+          "hash": "8513834887339918639"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/types/formatter.ts",
+          "hash": "13054530212953818172"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/types/index.ts",
+          "hash": "7955614488015958230"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/actions/index.ts",
+          "hash": "17547102368296335370",
+          "deps": [
+            "npm:style-dictionary"
+          ]
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/constants/constants.ts",
+          "hash": "2977041861734290020"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/constants/index.ts",
+          "hash": "4668264859669289957"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/parsers/index.ts",
+          "hash": "185865870299253762",
+          "deps": [
+            "npm:style-dictionary"
+          ]
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/parsers/parseThemeParser/formatters/generateJson.ts",
+          "hash": "2983252824249957502"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/parsers/parseThemeParser/formatters/index.ts",
+          "hash": "12913177965259768844"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/parsers/parseThemeParser/formatters/parseMode.ts",
+          "hash": "17498282585552152948"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/parsers/parseThemeParser/formatters/parseModesToThemes.ts",
+          "hash": "4700835382425846969"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/parsers/parseThemeParser/formatters/splitModes.ts",
+          "hash": "9526275563088555"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/parsers/parseThemeParser/helpers/helpers.ts",
+          "hash": "15497765595283527082"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/parsers/parseThemeParser/helpers/index.ts",
+          "hash": "14561565941312243540"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/parsers/parseThemeParser/index.ts",
+          "hash": "944487888372324830"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/parsers/parseThemeParser/parseThemeParser.ts",
+          "hash": "15891912653699073413",
+          "deps": [
+            "npm:style-dictionary"
+          ]
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/parsers/parseThemeParser/types/index.ts",
+          "hash": "8296727800735899395"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/parsers/parseThemeParser/types/types.ts",
+          "hash": "11916111720496092977"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/theme-generator.ts",
+          "hash": "13956854314282640237",
+          "deps": [
+            "npm:core-js",
+            "npm:style-dictionary",
+            "npm:commander"
+          ]
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/transforms/index.ts",
+          "hash": "2146334074038665771"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/transforms/typographyTransform.ts",
+          "hash": "8978771426368542602",
+          "deps": [
+            "npm:style-dictionary"
+          ]
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/types/cli.ts",
+          "hash": "3051409784745362369"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/types/common.ts",
+          "hash": "2245894863944811325"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/types/index.ts",
+          "hash": "13802220798516635081"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/index.ts",
+          "hash": "7741180630457194078"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/json/tokens.json",
+          "hash": "16635068231411594009"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/provider/ThemeProvider.tsx",
+          "hash": "4312829391690315144",
+          "deps": [
+            "npm:react",
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "libs/shared/theme/src/lib/provider/ThemeProvider.types.ts",
+          "hash": "9396639104664846859"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/provider/index.ts",
+          "hash": "9934041424298716174"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/theme/index.ts",
+          "hash": "8852772370861674269"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/theme/themes.ts",
+          "hash": "3322595020488514502"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/theme/types/collections/borderRadius.types.ts",
+          "hash": "2435809614729959431"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/theme/types/collections/components.types.ts",
+          "hash": "12412690851897618847"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/theme/types/collections/components/button.ts",
+          "hash": "5894864868344831803"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/theme/types/collections/components/index.ts",
+          "hash": "846497861675210819"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/theme/types/collections/index.ts",
+          "hash": "8805183691329553784"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/theme/types/collections/palette.types.ts",
+          "hash": "11376357075580566484"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/theme/types/collections/spacing.types.ts",
+          "hash": "8366775050177439869"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/theme/types/collections/tokens.types.ts",
+          "hash": "12842476778044919189"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/theme/types/collections/typography.types.ts",
+          "hash": "11423609614357162469"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/theme/types/index.ts",
+          "hash": "12280023521125347462"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/theme/types/themes.ts",
+          "hash": "16078183166028425964"
+        },
+        {
+          "file": "libs/shared/theme/tsconfig.json",
+          "hash": "12459014667702660822"
+        },
+        {
+          "file": "libs/shared/theme/tsconfig.lib.json",
+          "hash": "12782505187182166395"
+        }
+      ],
       "shared-icons": [
         {
           "file": "libs/shared/icons/.eslintrc.json",
@@ -6120,298 +6347,6 @@
           "hash": "7672594924500069316"
         }
       ],
-      "theme": [
-        {
-          "file": "libs/shared/theme/.babelrc",
-          "hash": "5712476190361238632"
-        },
-        {
-          "file": "libs/shared/theme/.eslintrc.json",
-          "hash": "15946965712701950674"
-        },
-        {
-          "file": "libs/shared/theme/README.md",
-          "hash": "3359207826875452305"
-        },
-        {
-          "file": "libs/shared/theme/project.json",
-          "hash": "15517733592465156539"
-        },
-        {
-          "file": "libs/shared/theme/src/index.ts",
-          "hash": "3552240282930762949"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/formatters/generateCode.ts",
-          "hash": "10211231898504397255",
-          "deps": [
-            "npm:fs"
-          ]
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/formatters/index.ts",
-          "hash": "10684072985312019024"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/formatters/parseJsonToThemes.ts",
-          "hash": "15245771880628533009",
-          "deps": [
-            "npm:style-dictionary"
-          ]
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/generate-code/generateCollectionsTypeCode.ts",
-          "hash": "2782551927379227960",
-          "deps": [
-            "npm:fs"
-          ]
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/generate-code/generateComponentsTypesCode.ts",
-          "hash": "16792806168087978427",
-          "deps": [
-            "npm:fs"
-          ]
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/generate-code/generateIndexFile.ts",
-          "hash": "11197476649799743348",
-          "deps": [
-            "npm:fs"
-          ]
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/generate-code/generateRootTypesIndex.ts",
-          "hash": "8233774598117898689",
-          "deps": [
-            "npm:fs"
-          ]
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/generate-code/generateThemeTypeCode.ts",
-          "hash": "17502317527975468621",
-          "deps": [
-            "npm:fs"
-          ]
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/generate-code/index.ts",
-          "hash": "348231653323373316"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/generateThemesAction.ts",
-          "hash": "1952593225445721491",
-          "deps": [
-            "npm:fs",
-            "npm:style-dictionary"
-          ]
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/helpers/helpers.ts",
-          "hash": "13692180265591216690"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/helpers/index.ts",
-          "hash": "15041905854315984094"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/index.ts",
-          "hash": "8513834887339918639"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/types/formatter.ts",
-          "hash": "13054530212953818172"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/types/index.ts",
-          "hash": "7955614488015958230"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/actions/index.ts",
-          "hash": "17547102368296335370",
-          "deps": [
-            "npm:style-dictionary"
-          ]
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/constants/constants.ts",
-          "hash": "2977041861734290020"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/constants/index.ts",
-          "hash": "4668264859669289957"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/parsers/index.ts",
-          "hash": "185865870299253762",
-          "deps": [
-            "npm:style-dictionary"
-          ]
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/parsers/parseThemeParser/formatters/generateJson.ts",
-          "hash": "2983252824249957502"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/parsers/parseThemeParser/formatters/index.ts",
-          "hash": "12913177965259768844"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/parsers/parseThemeParser/formatters/parseMode.ts",
-          "hash": "17498282585552152948"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/parsers/parseThemeParser/formatters/parseModesToThemes.ts",
-          "hash": "4700835382425846969"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/parsers/parseThemeParser/formatters/splitModes.ts",
-          "hash": "9526275563088555"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/parsers/parseThemeParser/helpers/helpers.ts",
-          "hash": "15497765595283527082"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/parsers/parseThemeParser/helpers/index.ts",
-          "hash": "14561565941312243540"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/parsers/parseThemeParser/index.ts",
-          "hash": "944487888372324830"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/parsers/parseThemeParser/parseThemeParser.ts",
-          "hash": "15891912653699073413",
-          "deps": [
-            "npm:style-dictionary"
-          ]
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/parsers/parseThemeParser/types/index.ts",
-          "hash": "8296727800735899395"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/parsers/parseThemeParser/types/types.ts",
-          "hash": "11916111720496092977"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/theme-generator.ts",
-          "hash": "13956854314282640237",
-          "deps": [
-            "npm:core-js",
-            "npm:style-dictionary",
-            "npm:commander"
-          ]
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/transforms/index.ts",
-          "hash": "2146334074038665771"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/transforms/typographyTransform.ts",
-          "hash": "8978771426368542602",
-          "deps": [
-            "npm:style-dictionary"
-          ]
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/types/cli.ts",
-          "hash": "3051409784745362369"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/types/common.ts",
-          "hash": "2245894863944811325"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/types/index.ts",
-          "hash": "13802220798516635081"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/index.ts",
-          "hash": "7741180630457194078"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/json/tokens.json",
-          "hash": "16635068231411594009"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/provider/ThemeProvider.tsx",
-          "hash": "4312829391690315144",
-          "deps": [
-            "npm:react",
-            "npm:styled-components"
-          ]
-        },
-        {
-          "file": "libs/shared/theme/src/lib/provider/ThemeProvider.types.ts",
-          "hash": "9396639104664846859"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/provider/index.ts",
-          "hash": "9934041424298716174"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/theme/index.ts",
-          "hash": "8852772370861674269"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/theme/themes.ts",
-          "hash": "3322595020488514502"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/theme/types/collections/borderRadius.types.ts",
-          "hash": "2435809614729959431"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/theme/types/collections/components.types.ts",
-          "hash": "12412690851897618847"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/theme/types/collections/components/button.ts",
-          "hash": "5894864868344831803"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/theme/types/collections/components/index.ts",
-          "hash": "846497861675210819"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/theme/types/collections/index.ts",
-          "hash": "8805183691329553784"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/theme/types/collections/palette.types.ts",
-          "hash": "11376357075580566484"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/theme/types/collections/spacing.types.ts",
-          "hash": "8366775050177439869"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/theme/types/collections/tokens.types.ts",
-          "hash": "12842476778044919189"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/theme/types/collections/typography.types.ts",
-          "hash": "11423609614357162469"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/theme/types/index.ts",
-          "hash": "12280023521125347462"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/theme/types/themes.ts",
-          "hash": "16078183166028425964"
-        },
-        {
-          "file": "libs/shared/theme/tsconfig.json",
-          "hash": "12459014667702660822"
-        },
-        {
-          "file": "libs/shared/theme/tsconfig.lib.json",
-          "hash": "12782505187182166395"
-        }
-      ],
       "shared-ui": [
         {
           "file": "libs/shared/ui/.babelrc",
@@ -6656,7 +6591,7 @@
         },
         {
           "file": "apps/design-system/project.json",
-          "hash": "55477697686133636"
+          "hash": "16119926644991438294"
         },
         {
           "file": "apps/design-system/src/assets/.gitkeep",
@@ -6817,6 +6752,76 @@
           ]
         }
       ]
-    }
+    },
+    "nonProjectFiles": [
+      {
+        "file": ".editorconfig",
+        "hash": "5443105041930014821"
+      },
+      {
+        "file": ".eslintignore",
+        "hash": "7663861978715868291"
+      },
+      {
+        "file": ".eslintrc.json",
+        "hash": "17866138117546000433"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "1960289168718619015"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "8865097869854018350"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "5206727499534837224"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "4637156562308165301"
+      },
+      {
+        "file": "README.md",
+        "hash": "3188545022132879006"
+      },
+      {
+        "file": "build-storybook.log",
+        "hash": "2937099324035511264"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "8934013352002371476"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "11039555799044607920"
+      },
+      {
+        "file": "nx.json",
+        "hash": "1334210432696704353"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "10813365465816253916"
+      },
+      {
+        "file": "package.json",
+        "hash": "13781604243669380610"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "16719765727044244939"
+      },
+      {
+        "file": "types/svg.d.ts",
+        "hash": "1425613786169501999"
+      },
+      {
+        "file": "types/themes.d.ts",
+        "hash": "5538604380583768595"
+      }
+    ]
   }
 }
