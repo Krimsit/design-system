@@ -42,3 +42,5 @@ Thumbs.db
 storybook-static
 
 .nx/cache
+
+apps/design-system/cypress/downloads
