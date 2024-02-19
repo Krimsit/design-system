@@ -1,0 +1,14 @@
+{
+  "6919330226250193772": {
+    "test": {
+      "command": "jest",
+      "options": {
+        "cwd": "apps/design-system"
+      },
+      "cache": true,
+      "outputs": [
+        "{workspaceRoot}/coverage/apps/design-system"
+      ]
+    }
+  }
+}

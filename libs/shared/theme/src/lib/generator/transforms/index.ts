@@ -1,0 +1,1 @@
+export { registerTypographyTransform } from './typographyTransform'

@@ -1,0 +1,1 @@
+export { registerGenerateThemesAction } from './generateThemesAction'

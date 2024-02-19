@@ -1,0 +1,21 @@
+{
+  "run": {
+    "command": "nx run design-system:storybook",
+    "startTime": "2024-02-16T14:35:01.369Z",
+    "endTime": "2024-02-16T14:35:03.926Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "design-system:storybook",
+      "target": "storybook",
+      "projectName": "design-system",
+      "hash": "3089571743757497440",
+      "startTime": "2024-02-16T14:35:01.375Z",
+      "endTime": "2024-02-16T14:35:03.925Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
+    }
+  ]
+}

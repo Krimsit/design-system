@@ -1,0 +1,472 @@
+[NX Daemon Server] - 2024-02-16T14:31:59.447Z - Started listening on: /var/folders/rx/fp5sf3697cb6vb8qhhfqrgjw0000gp/T/946fb72733a032cb1926/d.sock
+[NX Daemon Server] - 2024-02-16T14:31:59.449Z - [WATCHER]: Subscribed to changes within: /Users/asubbotin/projects/design-system (native)
+[NX Daemon Server] - 2024-02-16T14:31:59.456Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-02-16T14:31:59.456Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-02-16T14:31:59.458Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-02-16T14:31:59.777Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-16T14:31:59.777Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-16T14:31:59.777Z - [REQUEST]: 
+Unable to create nodes for apps/design-system/webpack.config.js using plugin @nx/webpack/plugin. 
+
+	 Inner Error: Error [ERR_REQUIRE_ESM]: require() of ES Module /Users/asubbotin/projects/design-system/apps/design-system/webpack.config.js from /Users/asubbotin/projects/design-system/node_modules/@nx/webpack/src/utils/webpack/resolve-user-defined-webpack-config.js not supported.
+webpack.config.js is treated as an ES module file as it is a .js file whose nearest parent package.json contains "type": "module" which declares all .js files in that package scope as ES modules.
+Instead rename webpack.config.js to end in .cjs, change the requiring code to use dynamic import() which is available in all CommonJS modules, or change "type": "module" to "type": "commonjs" in /Users/asubbotin/projects/design-system/package.json to treat all .js files as CommonJS (using .mjs for all ES modules instead).
+
+    at resolveUserDefinedWebpackConfig (/Users/asubbotin/projects/design-system/node_modules/@nx/webpack/src/utils/webpack/resolve-user-defined-webpack-config.js:20:16)
+    at createWebpackTargets (/Users/asubbotin/projects/design-system/node_modules/@nx/webpack/src/plugins/plugin.js:60:101)
+    at exports.createNodes (/Users/asubbotin/projects/design-system/node_modules/@nx/webpack/src/plugins/plugin.js:47:21)
+    at buildProjectsConfigurationsFromProjectPathsAndPlugins (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/project-configuration-utils.js:148:29)
+    at createProjectConfigurations (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:89:156)
+    at _retrieveProjectConfigurations (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:61:12)
+    at retrieveProjectConfigurations (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:46:12)
+    at async processFilesAndCreateAndSerializeProjectGraph (/Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/project-graph-incremental-recomputation.js:140:28)
+    at async getCachedSerializedProjectGraphPromise (/Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/project-graph-incremental-recomputation.js:43:16)
+    at async handleRequestProjectGraph (/Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/handle-request-project-graph.js:12:24)
+    at async handleResult (/Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/server.js:110:16)
+    at async handleMessage (/Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/server.js:81:9)
+    at async /Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/server.js:45:9
+[NX Daemon Server] - 2024-02-16T14:32:00.008Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Unable to create nodes for apps/design-system/webpack.config.js using plugin @nx/webpack/plugin. 
+
+	 Inner Error: Error [ERR_REQUIRE_ESM]: require() of ES Module /Users/asubbotin/projects/design-system/apps/design-system/webpack.config.js from /Users/asubbotin/projects/design-system/node_modules/@nx/webpack/src/utils/webpack/resolve-user-defined-webpack-config.js not supported.
+webpack.config.js is treated as an ES module file as it is a .js file whose nearest parent package.json contains "type": "module" which declares all .js files in that package scope as ES modules.
+Instead rename webpack.config.js to end in .cjs, change the requiring code to use dynamic import() which is available in all CommonJS modules, or change "type": "module" to "type": "commonjs" in /Users/asubbotin/projects/design-system/package.json to treat all .js files as CommonJS (using .mjs for all ES modules instead).
+
+    at resolveUserDefinedWebpackConfig (/Users/asubbotin/projects/design-system/node_modules/@nx/webpack/src/utils/webpack/resolve-user-defined-webpack-config.js:20:16)
+    at createWebpackTargets (/Users/asubbotin/projects/design-system/node_modules/@nx/webpack/src/plugins/plugin.js:60:101)
+    at exports.createNodes (/Users/asubbotin/projects/design-system/node_modules/@nx/webpack/src/plugins/plugin.js:47:21)
+    at buildProjectsConfigurationsFromProjectPathsAndPlugins (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/project-configuration-utils.js:148:29)
+    at createProjectConfigurations (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:89:156)
+    at _retrieveProjectConfigurations (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:61:12)
+    at retrieveProjectConfigurations (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:46:12)
+    at async processFilesAndCreateAndSerializeProjectGraph (/Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/project-graph-incremental-recomputation.js:140:28)
+    at async getCachedSerializedProjectGraphPromise (/Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/project-graph-incremental-recomputation.js:43:16)
+    at async handleRequestProjectGraph (/Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/handle-request-project-graph.js:12:24)
+    at async handleResult (/Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/server.js:110:16)
+    at async handleMessage (/Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/server.js:81:9)
+    at async /Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/server.js:45:9
+CreateNodesError: Unable to create nodes for apps/design-system/webpack.config.js using plugin @nx/webpack/plugin. 
+
+	 Inner Error: Error [ERR_REQUIRE_ESM]: require() of ES Module /Users/asubbotin/projects/design-system/apps/design-system/webpack.config.js from /Users/asubbotin/projects/design-system/node_modules/@nx/webpack/src/utils/webpack/resolve-user-defined-webpack-config.js not supported.
+webpack.config.js is treated as an ES module file as it is a .js file whose nearest parent package.json contains "type": "module" which declares all .js files in that package scope as ES modules.
+Instead rename webpack.config.js to end in .cjs, change the requiring code to use dynamic import() which is available in all CommonJS modules, or change "type": "module" to "type": "commonjs" in /Users/asubbotin/projects/design-system/package.json to treat all .js files as CommonJS (using .mjs for all ES modules instead).
+
+    at resolveUserDefinedWebpackConfig (/Users/asubbotin/projects/design-system/node_modules/@nx/webpack/src/utils/webpack/resolve-user-defined-webpack-config.js:20:16)
+    at createWebpackTargets (/Users/asubbotin/projects/design-system/node_modules/@nx/webpack/src/plugins/plugin.js:60:101)
+    at exports.createNodes (/Users/asubbotin/projects/design-system/node_modules/@nx/webpack/src/plugins/plugin.js:47:21)
+    at buildProjectsConfigurationsFromProjectPathsAndPlugins (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/project-configuration-utils.js:148:29)
+    at createProjectConfigurations (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:89:156)
+    at _retrieveProjectConfigurations (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:61:12)
+    at retrieveProjectConfigurations (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:46:12)
+    at async processFilesAndCreateAndSerializeProjectGraph (/Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/project-graph-incremental-recomputation.js:140:28)
+    at async getCachedSerializedProjectGraphPromise (/Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/project-graph-incremental-recomputation.js:43:16)
+    at async handleRequestProjectGraph (/Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/handle-request-project-graph.js:12:24)
+    at async handleResult (/Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/server.js:110:16)
+    at async handleMessage (/Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/server.js:81:9)
+    at async /Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/server.js:45:9
+    at /Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/project-configuration-utils.js:156:35
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Promise.all (index 0)
+    at async Promise.all (index 3)
+    at async createProjectConfigurations (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:89:62)
+    at async processFilesAndCreateAndSerializeProjectGraph (/Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/project-graph-incremental-recomputation.js:140:28)
+    ... 3 lines matching cause stack trace ...
+    at async handleMessage (/Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/server.js:81:9) {
+  [cause]: Error [ERR_REQUIRE_ESM]: require() of ES Module /Users/asubbotin/projects/design-system/apps/design-system/webpack.config.js from /Users/asubbotin/projects/design-system/node_modules/@nx/webpack/src/utils/webpack/resolve-user-defined-webpack-config.js not supported.
+  webpack.config.js is treated as an ES module file as it is a .js file whose nearest parent package.json contains "type": "module" which declares all .js files in that package scope as ES modules.
+  Instead rename webpack.config.js to end in .cjs, change the requiring code to use dynamic import() which is available in all CommonJS modules, or change "type": "module" to "type": "commonjs" in /Users/asubbotin/projects/design-system/package.json to treat all .js files as CommonJS (using .mjs for all ES modules instead).
+  
+      at resolveUserDefinedWebpackConfig (/Users/asubbotin/projects/design-system/node_modules/@nx/webpack/src/utils/webpack/resolve-user-defined-webpack-config.js:20:16)
+      at createWebpackTargets (/Users/asubbotin/projects/design-system/node_modules/@nx/webpack/src/plugins/plugin.js:60:101)
+      at exports.createNodes (/Users/asubbotin/projects/design-system/node_modules/@nx/webpack/src/plugins/plugin.js:47:21)
+      at buildProjectsConfigurationsFromProjectPathsAndPlugins (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/project-configuration-utils.js:148:29)
+      at createProjectConfigurations (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:89:156)
+      at _retrieveProjectConfigurations (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:61:12)
+      at retrieveProjectConfigurations (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:46:12)
+      at async processFilesAndCreateAndSerializeProjectGraph (/Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/project-graph-incremental-recomputation.js:140:28)
+      at async getCachedSerializedProjectGraphPromise (/Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/project-graph-incremental-recomputation.js:43:16)
+      at async handleRequestProjectGraph (/Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/handle-request-project-graph.js:12:24)
+      at async handleResult (/Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/server.js:110:16)
+      at async handleMessage (/Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/server.js:81:9)
+      at async /Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/server.js:45:9 {
+    code: 'ERR_REQUIRE_ESM'
+  }
+}
+[NX Daemon Server] - 2024-02-16T14:32:00.010Z - Time taken for 'hash changed files from watcher' 318.1265409588814ms
+[NX Daemon Server] - 2024-02-16T14:32:00.010Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-02-16T14:32:00.010Z - Done responding to the client null
+[NX Daemon Server] - 2024-02-16T14:32:20.253Z - Started listening on: /var/folders/rx/fp5sf3697cb6vb8qhhfqrgjw0000gp/T/946fb72733a032cb1926/d.sock
+[NX Daemon Server] - 2024-02-16T14:32:20.254Z - [WATCHER]: Subscribed to changes within: /Users/asubbotin/projects/design-system (native)
+[NX Daemon Server] - 2024-02-16T14:32:20.262Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-02-16T14:32:20.263Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-02-16T14:32:20.264Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-02-16T14:32:20.266Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-16T14:32:20.266Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-16T14:32:20.266Z - [REQUEST]: 
+Unable to create nodes for apps/design-system/webpack.config.js using plugin @nx/webpack/plugin. 
+
+	 Inner Error: Error [ERR_REQUIRE_ESM]: require() of ES Module /Users/asubbotin/projects/design-system/apps/design-system/webpack.config.js from /Users/asubbotin/projects/design-system/node_modules/@nx/webpack/src/utils/webpack/resolve-user-defined-webpack-config.js not supported.
+webpack.config.js is treated as an ES module file as it is a .js file whose nearest parent package.json contains "type": "module" which declares all .js files in that package scope as ES modules.
+Instead rename webpack.config.js to end in .cjs, change the requiring code to use dynamic import() which is available in all CommonJS modules, or change "type": "module" to "type": "commonjs" in /Users/asubbotin/projects/design-system/package.json to treat all .js files as CommonJS (using .mjs for all ES modules instead).
+
+    at resolveUserDefinedWebpackConfig (/Users/asubbotin/projects/design-system/node_modules/@nx/webpack/src/utils/webpack/resolve-user-defined-webpack-config.js:20:16)
+    at createWebpackTargets (/Users/asubbotin/projects/design-system/node_modules/@nx/webpack/src/plugins/plugin.js:60:101)
+    at exports.createNodes (/Users/asubbotin/projects/design-system/node_modules/@nx/webpack/src/plugins/plugin.js:47:21)
+    at buildProjectsConfigurationsFromProjectPathsAndPlugins (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/project-configuration-utils.js:148:29)
+    at createProjectConfigurations (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:89:156)
+    at _retrieveProjectConfigurations (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:61:12)
+    at retrieveProjectConfigurations (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:46:12)
+    at async processFilesAndCreateAndSerializeProjectGraph (/Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/project-graph-incremental-recomputation.js:140:28)
+    at async getCachedSerializedProjectGraphPromise (/Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/project-graph-incremental-recomputation.js:43:16)
+    at async handleRequestProjectGraph (/Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/handle-request-project-graph.js:12:24)
+    at async handleResult (/Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/server.js:110:16)
+    at async handleMessage (/Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/server.js:81:9)
+    at async /Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/server.js:45:9
+[NX Daemon Server] - 2024-02-16T14:32:20.418Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Unable to create nodes for apps/design-system/webpack.config.js using plugin @nx/webpack/plugin. 
+
+	 Inner Error: Error [ERR_REQUIRE_ESM]: require() of ES Module /Users/asubbotin/projects/design-system/apps/design-system/webpack.config.js from /Users/asubbotin/projects/design-system/node_modules/@nx/webpack/src/utils/webpack/resolve-user-defined-webpack-config.js not supported.
+webpack.config.js is treated as an ES module file as it is a .js file whose nearest parent package.json contains "type": "module" which declares all .js files in that package scope as ES modules.
+Instead rename webpack.config.js to end in .cjs, change the requiring code to use dynamic import() which is available in all CommonJS modules, or change "type": "module" to "type": "commonjs" in /Users/asubbotin/projects/design-system/package.json to treat all .js files as CommonJS (using .mjs for all ES modules instead).
+
+    at resolveUserDefinedWebpackConfig (/Users/asubbotin/projects/design-system/node_modules/@nx/webpack/src/utils/webpack/resolve-user-defined-webpack-config.js:20:16)
+    at createWebpackTargets (/Users/asubbotin/projects/design-system/node_modules/@nx/webpack/src/plugins/plugin.js:60:101)
+    at exports.createNodes (/Users/asubbotin/projects/design-system/node_modules/@nx/webpack/src/plugins/plugin.js:47:21)
+    at buildProjectsConfigurationsFromProjectPathsAndPlugins (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/project-configuration-utils.js:148:29)
+    at createProjectConfigurations (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:89:156)
+    at _retrieveProjectConfigurations (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:61:12)
+    at retrieveProjectConfigurations (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:46:12)
+    at async processFilesAndCreateAndSerializeProjectGraph (/Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/project-graph-incremental-recomputation.js:140:28)
+    at async getCachedSerializedProjectGraphPromise (/Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/project-graph-incremental-recomputation.js:43:16)
+    at async handleRequestProjectGraph (/Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/handle-request-project-graph.js:12:24)
+    at async handleResult (/Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/server.js:110:16)
+    at async handleMessage (/Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/server.js:81:9)
+    at async /Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/server.js:45:9
+CreateNodesError: Unable to create nodes for apps/design-system/webpack.config.js using plugin @nx/webpack/plugin. 
+
+	 Inner Error: Error [ERR_REQUIRE_ESM]: require() of ES Module /Users/asubbotin/projects/design-system/apps/design-system/webpack.config.js from /Users/asubbotin/projects/design-system/node_modules/@nx/webpack/src/utils/webpack/resolve-user-defined-webpack-config.js not supported.
+webpack.config.js is treated as an ES module file as it is a .js file whose nearest parent package.json contains "type": "module" which declares all .js files in that package scope as ES modules.
+Instead rename webpack.config.js to end in .cjs, change the requiring code to use dynamic import() which is available in all CommonJS modules, or change "type": "module" to "type": "commonjs" in /Users/asubbotin/projects/design-system/package.json to treat all .js files as CommonJS (using .mjs for all ES modules instead).
+
+    at resolveUserDefinedWebpackConfig (/Users/asubbotin/projects/design-system/node_modules/@nx/webpack/src/utils/webpack/resolve-user-defined-webpack-config.js:20:16)
+    at createWebpackTargets (/Users/asubbotin/projects/design-system/node_modules/@nx/webpack/src/plugins/plugin.js:60:101)
+    at exports.createNodes (/Users/asubbotin/projects/design-system/node_modules/@nx/webpack/src/plugins/plugin.js:47:21)
+    at buildProjectsConfigurationsFromProjectPathsAndPlugins (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/project-configuration-utils.js:148:29)
+    at createProjectConfigurations (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:89:156)
+    at _retrieveProjectConfigurations (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:61:12)
+    at retrieveProjectConfigurations (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:46:12)
+    at async processFilesAndCreateAndSerializeProjectGraph (/Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/project-graph-incremental-recomputation.js:140:28)
+    at async getCachedSerializedProjectGraphPromise (/Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/project-graph-incremental-recomputation.js:43:16)
+    at async handleRequestProjectGraph (/Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/handle-request-project-graph.js:12:24)
+    at async handleResult (/Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/server.js:110:16)
+    at async handleMessage (/Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/server.js:81:9)
+    at async /Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/server.js:45:9
+    at /Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/project-configuration-utils.js:156:35
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Promise.all (index 0)
+    at async Promise.all (index 3)
+    at async createProjectConfigurations (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:89:62)
+    at async processFilesAndCreateAndSerializeProjectGraph (/Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/project-graph-incremental-recomputation.js:140:28)
+    ... 3 lines matching cause stack trace ...
+    at async handleMessage (/Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/server.js:81:9) {
+  [cause]: Error [ERR_REQUIRE_ESM]: require() of ES Module /Users/asubbotin/projects/design-system/apps/design-system/webpack.config.js from /Users/asubbotin/projects/design-system/node_modules/@nx/webpack/src/utils/webpack/resolve-user-defined-webpack-config.js not supported.
+  webpack.config.js is treated as an ES module file as it is a .js file whose nearest parent package.json contains "type": "module" which declares all .js files in that package scope as ES modules.
+  Instead rename webpack.config.js to end in .cjs, change the requiring code to use dynamic import() which is available in all CommonJS modules, or change "type": "module" to "type": "commonjs" in /Users/asubbotin/projects/design-system/package.json to treat all .js files as CommonJS (using .mjs for all ES modules instead).
+  
+      at resolveUserDefinedWebpackConfig (/Users/asubbotin/projects/design-system/node_modules/@nx/webpack/src/utils/webpack/resolve-user-defined-webpack-config.js:20:16)
+      at createWebpackTargets (/Users/asubbotin/projects/design-system/node_modules/@nx/webpack/src/plugins/plugin.js:60:101)
+      at exports.createNodes (/Users/asubbotin/projects/design-system/node_modules/@nx/webpack/src/plugins/plugin.js:47:21)
+      at buildProjectsConfigurationsFromProjectPathsAndPlugins (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/project-configuration-utils.js:148:29)
+      at createProjectConfigurations (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:89:156)
+      at _retrieveProjectConfigurations (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:61:12)
+      at retrieveProjectConfigurations (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:46:12)
+      at async processFilesAndCreateAndSerializeProjectGraph (/Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/project-graph-incremental-recomputation.js:140:28)
+      at async getCachedSerializedProjectGraphPromise (/Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/project-graph-incremental-recomputation.js:43:16)
+      at async handleRequestProjectGraph (/Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/handle-request-project-graph.js:12:24)
+      at async handleResult (/Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/server.js:110:16)
+      at async handleMessage (/Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/server.js:81:9)
+      at async /Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/server.js:45:9 {
+    code: 'ERR_REQUIRE_ESM'
+  }
+}
+[NX Daemon Server] - 2024-02-16T14:32:20.420Z - Time taken for 'hash changed files from watcher' 1.5698750019073486ms
+[NX Daemon Server] - 2024-02-16T14:32:20.420Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-02-16T14:32:20.420Z - Done responding to the client null
+[NX Daemon Server] - 2024-02-16T14:35:00.399Z - Started listening on: /var/folders/rx/fp5sf3697cb6vb8qhhfqrgjw0000gp/T/946fb72733a032cb1926/d.sock
+[NX Daemon Server] - 2024-02-16T14:35:00.401Z - [WATCHER]: Subscribed to changes within: /Users/asubbotin/projects/design-system (native)
+[NX Daemon Server] - 2024-02-16T14:35:00.401Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-02-16T14:35:00.402Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-02-16T14:35:00.404Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-02-16T14:35:00.411Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-16T14:35:00.411Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-16T14:35:00.411Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-16T14:35:00.915Z - Time taken for 'hash changed files from watcher' 7.16966700553894ms
+[NX Daemon Server] - 2024-02-16T14:35:00.915Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-02-16T14:35:01.325Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-02-16T14:35:01.325Z - Time taken for 'total for creating and serializing project graph' 921.0165420174599ms
+[NX Daemon Server] - 2024-02-16T14:35:01.328Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-02-16T14:35:01.328Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 921. Response time: 3.
+[NX Daemon Server] - 2024-02-16T14:35:01.368Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX Daemon Server] - 2024-02-16T14:35:01.368Z - Done responding to the client handleHashTasks
+[NX Daemon Server] - 2024-02-16T14:35:01.368Z - Handled HASH_TASKS. Handling time: 11. Response time: 0.
+[NX Daemon Server] - 2024-02-16T14:35:03.924Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX Daemon Server] - 2024-02-16T14:35:03.925Z - Done responding to the client recordOutputsHash
+[NX Daemon Server] - 2024-02-16T14:35:03.925Z - Handled RECORD_OUTPUTS_HASH. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2024-02-16T14:35:03.929Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-02-16T14:35:22.626Z - [WATCHER]: apps/design-system/project.json was modified
+[NX Daemon Server] - 2024-02-16T14:35:22.627Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-16T14:35:22.730Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-16T14:35:22.730Z - [REQUEST]: apps/design-system/project.json
+[NX Daemon Server] - 2024-02-16T14:35:22.730Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-16T14:35:23.562Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-16T14:35:23.562Z - Time taken for 'hash changed files from watcher' 2.036541998386383ms
+[NX Daemon Server] - 2024-02-16T14:35:25.563Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-02-16T14:35:25.563Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-02-16T14:35:25.565Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-02-16T14:35:25.565Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-02-16T14:35:25.566Z - Time taken for 'total for creating and serializing project graph' 0.24095797538757324ms
+[NX Daemon Server] - 2024-02-16T14:35:25.566Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-02-16T14:35:25.567Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-02-16T14:35:25.567Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 2.
+[NX Daemon Server] - 2024-02-16T14:35:25.594Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX Daemon Server] - 2024-02-16T14:35:25.594Z - Done responding to the client handleHashTasks
+[NX Daemon Server] - 2024-02-16T14:35:25.594Z - Handled HASH_TASKS. Handling time: 10. Response time: 0.
+[NX Daemon Server] - 2024-02-16T14:35:28.723Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-02-16T14:35:28.725Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-02-16T14:35:28.725Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-02-16T14:35:28.726Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-02-16T14:35:28.726Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-02-16T14:35:28.726Z - Time taken for 'total for creating and serializing project graph' 0.07466596364974976ms
+[NX Daemon Server] - 2024-02-16T14:35:28.728Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-02-16T14:35:28.728Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 2.
+[NX Daemon Server] - 2024-02-16T14:36:52.392Z - [WATCHER]: 0 file(s) created or restored, 2 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2024-02-16T14:36:52.395Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-16T14:36:52.502Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-16T14:36:52.502Z - [REQUEST]: apps/design-system/.storybook/preview.ts,apps/design-system/.storybook/main.ts
+[NX Daemon Server] - 2024-02-16T14:36:52.502Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-16T14:36:53.833Z - [WATCHER]: apps/design-system/.storybook/preview.ts was modified
+[NX Daemon Server] - 2024-02-16T14:36:53.833Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-16T14:36:53.833Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-16T14:36:53.834Z - Time taken for 'hash changed files from watcher' 4.721792042255402ms
+[NX Daemon Server] - 2024-02-16T14:36:54.035Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-16T14:36:54.035Z - [REQUEST]: apps/design-system/.storybook/preview.ts
+[NX Daemon Server] - 2024-02-16T14:36:54.035Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-16T14:36:54.494Z - Time taken for 'hash changed files from watcher' 1.737000048160553ms
+[NX Daemon Server] - 2024-02-16T14:37:08.336Z - [WATCHER]: apps/design-system/.storybook/main.ts was modified
+[NX Daemon Server] - 2024-02-16T14:37:08.337Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-16T14:37:08.741Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-16T14:37:08.741Z - [REQUEST]: apps/design-system/.storybook/main.ts
+[NX Daemon Server] - 2024-02-16T14:37:08.741Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-16T14:37:09.386Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-16T14:37:09.387Z - Time taken for 'hash changed files from watcher' 2.7662920355796814ms
+[NX Daemon Server] - 2024-02-16T14:37:09.387Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-02-16T14:37:09.387Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-02-16T14:37:13.745Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-02-16T14:37:13.746Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-02-16T14:37:13.747Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-02-16T14:37:13.748Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-02-16T14:37:13.749Z - Time taken for 'total for creating and serializing project graph' 0.35441696643829346ms
+[NX Daemon Server] - 2024-02-16T14:37:13.749Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-02-16T14:37:13.751Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-02-16T14:37:13.751Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 1. Response time: 3.
+[NX Daemon Server] - 2024-02-16T14:37:13.786Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX Daemon Server] - 2024-02-16T14:37:13.787Z - Done responding to the client handleHashTasks
+[NX Daemon Server] - 2024-02-16T14:37:13.787Z - Handled HASH_TASKS. Handling time: 15. Response time: 1.
+[NX Daemon Server] - 2024-02-16T14:37:17.187Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-02-16T14:37:17.187Z - Established a connection. Number of open connections: 3
+[NX Daemon Server] - 2024-02-16T14:37:17.189Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-02-16T14:37:17.190Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-02-16T14:37:17.191Z - Time taken for 'total for creating and serializing project graph' 0.4394170045852661ms
+[NX Daemon Server] - 2024-02-16T14:37:17.191Z - Closed a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-02-16T14:37:17.200Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-02-16T14:37:17.200Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 1. Response time: 10.
+[NX Daemon Server] - 2024-02-16T14:37:40.301Z - [WATCHER]: apps/design-system/src/stories/components/Atoms/Button/Playground.stories.tsx was modified
+[NX Daemon Server] - 2024-02-16T14:37:40.303Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-16T14:37:40.411Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-16T14:37:40.411Z - [REQUEST]: apps/design-system/src/stories/components/Atoms/Button/Playground.stories.tsx
+[NX Daemon Server] - 2024-02-16T14:37:40.411Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-16T14:37:41.970Z - Time taken for 'hash changed files from watcher' 5.784417033195496ms
+[NX Daemon Server] - 2024-02-16T14:37:42.496Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-16T14:38:44.200Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-02-16T14:38:44.257Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-02-16T14:43:30.153Z - [WATCHER]: apps/design-system/.storybook/main.ts was modified
+[NX Daemon Server] - 2024-02-16T14:43:30.155Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-16T14:43:30.358Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-16T14:43:30.358Z - [REQUEST]: apps/design-system/.storybook/main.ts
+[NX Daemon Server] - 2024-02-16T14:43:30.358Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-16T14:43:31.324Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-16T14:43:31.324Z - Time taken for 'hash changed files from watcher' 2.1404590010643005ms
+[NX Daemon Server] - 2024-02-16T14:43:31.505Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-02-16T14:43:31.506Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-02-16T14:43:31.507Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-02-16T14:43:31.507Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-02-16T14:43:31.508Z - Time taken for 'total for creating and serializing project graph' 0.16924995183944702ms
+[NX Daemon Server] - 2024-02-16T14:43:31.509Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-02-16T14:43:31.523Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-02-16T14:43:31.523Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 16.
+[NX Daemon Server] - 2024-02-16T14:43:31.578Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX Daemon Server] - 2024-02-16T14:43:31.584Z - Done responding to the client handleHashTasks
+[NX Daemon Server] - 2024-02-16T14:43:31.584Z - Handled HASH_TASKS. Handling time: 22. Response time: 6.
+[NX Daemon Server] - 2024-02-16T14:43:34.552Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-02-16T14:43:34.552Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-02-16T14:43:34.552Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-02-16T14:43:34.553Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-02-16T14:43:34.553Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-02-16T14:43:34.553Z - Time taken for 'total for creating and serializing project graph' 0.07679098844528198ms
+[NX Daemon Server] - 2024-02-16T14:43:34.555Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-02-16T14:43:34.555Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 2.
+[NX Daemon Server] - 2024-02-16T14:43:48.567Z - [WATCHER]: apps/design-system/.storybook/main.ts was modified
+[NX Daemon Server] - 2024-02-16T14:43:48.569Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-16T14:43:48.673Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-16T14:43:48.673Z - [REQUEST]: apps/design-system/.storybook/main.ts
+[NX Daemon Server] - 2024-02-16T14:43:48.673Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-16T14:43:49.709Z - Time taken for 'hash changed files from watcher' 2.1964160203933716ms
+[NX Daemon Server] - 2024-02-16T14:44:04.114Z - [WATCHER]: apps/design-system/src/stories/components/Atoms/Button/Playground.stories.tsx was modified
+[NX Daemon Server] - 2024-02-16T14:44:04.115Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-16T14:44:04.317Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-16T14:44:04.317Z - [REQUEST]: apps/design-system/src/stories/components/Atoms/Button/Playground.stories.tsx
+[NX Daemon Server] - 2024-02-16T14:44:04.317Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-16T14:44:05.489Z - Time taken for 'hash changed files from watcher' 2.0195000171661377ms
+[NX Daemon Server] - 2024-02-16T14:44:05.621Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-16T14:44:27.976Z - [WATCHER]: apps/design-system/src/stories/components/Atoms/Button/FilledActionAndroid.svg was deleted
+[NX Daemon Server] - 2024-02-16T14:44:27.977Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-16T14:44:28.380Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-16T14:44:28.380Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-16T14:44:28.380Z - [REQUEST]: apps/design-system/src/stories/components/Atoms/Button/FilledActionAndroid.svg
+[NX Daemon Server] - 2024-02-16T14:44:29.260Z - Time taken for 'hash changed files from watcher' 1.7326250076293945ms
+[NX Daemon Server] - 2024-02-16T14:44:37.230Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-16T14:44:37.241Z - [WATCHER]: 0 file(s) created or restored, 0 file(s) modified, 3 file(s) deleted
+[NX Daemon Server] - 2024-02-16T14:44:38.045Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-16T14:44:38.045Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-16T14:44:38.045Z - [REQUEST]: apps/design-system/src/app/app.tsx,apps/design-system/src/app/app.spec.tsx,apps/design-system/src/app/nx-welcome.tsx
+(node:79994) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 exit listeners added to [process]. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+[NX Daemon Server] - 2024-02-16T14:44:38.881Z - Time taken for 'hash changed files from watcher' 2.5833330154418945ms
+[NX Daemon Server] - 2024-02-16T14:44:39.917Z - [WATCHER]: 0 file(s) created or restored, 0 file(s) modified, 3 file(s) deleted
+[NX Daemon Server] - 2024-02-16T14:44:39.917Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-16T14:44:41.521Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-16T14:44:41.522Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-16T14:44:41.522Z - [REQUEST]: apps/design-system/src/main.tsx,apps/design-system/src/favicon.ico,apps/design-system/src/index.html
+[NX Daemon Server] - 2024-02-16T14:44:42.068Z - Time taken for 'hash changed files from watcher' 2.6990000009536743ms
+[NX Daemon Server] - 2024-02-16T14:44:43.613Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-02-16T14:44:43.660Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-02-16T14:44:45.351Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-02-16T14:44:45.352Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-02-16T14:44:45.352Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-02-16T14:44:45.353Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-02-16T14:44:45.354Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-02-16T14:44:45.354Z - Time taken for 'total for creating and serializing project graph' 0.18950003385543823ms
+[NX Daemon Server] - 2024-02-16T14:44:45.356Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-02-16T14:44:45.356Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 1. Response time: 2.
+[NX Daemon Server] - 2024-02-16T14:44:45.384Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX Daemon Server] - 2024-02-16T14:44:45.384Z - Done responding to the client handleHashTasks
+[NX Daemon Server] - 2024-02-16T14:44:45.384Z - Handled HASH_TASKS. Handling time: 9. Response time: 0.
+[NX Daemon Server] - 2024-02-16T14:44:48.106Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-02-16T14:44:48.106Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-02-16T14:44:48.106Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-02-16T14:44:48.107Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-02-16T14:44:48.107Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-02-16T14:44:48.108Z - Time taken for 'total for creating and serializing project graph' 0.12650001049041748ms
+[NX Daemon Server] - 2024-02-16T14:44:48.109Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-02-16T14:44:48.109Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 2.
+[NX Daemon Server] - 2024-02-16T14:45:11.524Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-02-16T14:45:11.546Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-02-16T14:46:29.301Z - [WATCHER]: apps/design-system/src/stories/components/Atoms/Button/Tests.stories.tsx was created or restored
+[NX Daemon Server] - 2024-02-16T14:46:29.305Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-16T14:46:29.407Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-16T14:46:29.408Z - [REQUEST]: apps/design-system/src/stories/components/Atoms/Button/Tests.stories.tsx
+[NX Daemon Server] - 2024-02-16T14:46:29.408Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-16T14:46:30.349Z - Time taken for 'hash changed files from watcher' 2.948790967464447ms
+[NX Daemon Server] - 2024-02-16T14:47:59.467Z - [WATCHER]: 0 file(s) created or restored, 2 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2024-02-16T14:47:59.468Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-16T14:47:59.617Z - [WATCHER]: apps/design-system/src/stories/components/Atoms/Button/Tests.stories.tsx was modified
+[NX Daemon Server] - 2024-02-16T14:47:59.618Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-16T14:47:59.675Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-16T14:47:59.677Z - [REQUEST]: apps/design-system/src/stories/components/Atoms/Button/Tests.stories.tsx,apps/design-system/src/stories/components/Atoms/Button/Playground.stories.tsx
+[NX Daemon Server] - 2024-02-16T14:47:59.677Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-16T14:48:00.954Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-16T14:48:00.957Z - Time taken for 'hash changed files from watcher' 5.675125002861023ms
+[NX Daemon Server] - 2024-02-16T14:48:03.185Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-02-16T14:48:03.186Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-02-16T14:48:03.189Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-02-16T14:48:03.189Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-02-16T14:48:03.190Z - Time taken for 'total for creating and serializing project graph' 0.40700000524520874ms
+[NX Daemon Server] - 2024-02-16T14:48:03.190Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-02-16T14:48:03.192Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-02-16T14:48:03.192Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 3.
+[NX Daemon Server] - 2024-02-16T14:48:03.225Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX Daemon Server] - 2024-02-16T14:48:03.225Z - Done responding to the client handleHashTasks
+[NX Daemon Server] - 2024-02-16T14:48:03.225Z - Handled HASH_TASKS. Handling time: 14. Response time: 0.
+[NX Daemon Server] - 2024-02-16T14:48:06.295Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-02-16T14:48:06.295Z - Established a connection. Number of open connections: 3
+[NX Daemon Server] - 2024-02-16T14:48:06.295Z - Closed a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-02-16T14:48:06.297Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-02-16T14:48:06.297Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-02-16T14:48:06.297Z - Time taken for 'total for creating and serializing project graph' 0.11837500333786011ms
+[NX Daemon Server] - 2024-02-16T14:48:06.299Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-02-16T14:48:06.299Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 2.
+[NX Daemon Server] - 2024-02-16T14:48:53.994Z - [WATCHER]: apps/design-system/src/stories/components/Atoms/Button/Tests.stories.tsx was modified
+[NX Daemon Server] - 2024-02-16T14:48:53.995Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-16T14:48:54.098Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-16T14:48:54.098Z - [REQUEST]: apps/design-system/src/stories/components/Atoms/Button/Tests.stories.tsx
+[NX Daemon Server] - 2024-02-16T14:48:54.098Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-16T14:48:55.350Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-16T14:48:55.352Z - Time taken for 'hash changed files from watcher' 2.116124987602234ms
+[NX Daemon Server] - 2024-02-16T14:51:29.774Z - [WATCHER]: 0 file(s) created or restored, 2 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2024-02-16T14:51:29.776Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-16T14:51:29.938Z - [WATCHER]: apps/design-system/src/stories/components/Atoms/Button/Tests.stories.tsx was modified
+[NX Daemon Server] - 2024-02-16T14:51:29.938Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-16T14:51:29.983Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-16T14:51:29.983Z - [REQUEST]: apps/design-system/src/stories/components/Atoms/Button/Playground.stories.tsx,apps/design-system/src/stories/components/Atoms/Button/Tests.stories.tsx
+[NX Daemon Server] - 2024-02-16T14:51:29.983Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-16T14:51:31.292Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-16T14:51:31.299Z - Time taken for 'hash changed files from watcher' 5.819000005722046ms
+[NX Daemon Server] - 2024-02-16T14:52:26.555Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-16T14:52:45.056Z - [WATCHER]: apps/design-system/src/stories/components/Atoms/Button/Tests.stories.tsx was modified
+[NX Daemon Server] - 2024-02-16T14:52:45.058Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-16T14:52:45.463Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-16T14:52:45.463Z - [REQUEST]: apps/design-system/src/stories/components/Atoms/Button/Tests.stories.tsx
+[NX Daemon Server] - 2024-02-16T14:52:45.463Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-16T14:52:47.145Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-16T14:52:47.146Z - Time taken for 'hash changed files from watcher' 4.438082993030548ms
+[NX Daemon Server] - 2024-02-16T14:53:11.320Z - [WATCHER]: apps/design-system/src/stories/components/Atoms/Button/Tests.stories.tsx was modified
+[NX Daemon Server] - 2024-02-16T14:53:11.323Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-16T14:53:12.126Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-16T14:53:12.126Z - [REQUEST]: apps/design-system/src/stories/components/Atoms/Button/Tests.stories.tsx
+[NX Daemon Server] - 2024-02-16T14:53:12.126Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-16T14:53:13.197Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-16T14:53:13.199Z - Time taken for 'hash changed files from watcher' 3.6478750109672546ms
+[NX Daemon Server] - 2024-02-16T14:55:16.857Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-02-16T14:55:16.896Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-02-18T18:39:15.144Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-18T18:39:15.178Z - [WATCHER]: Stopping the watcher for /Users/asubbotin/projects/design-system (sources)
+[NX Daemon Server] - 2024-02-18T18:39:15.179Z - [WATCHER]: Stopping the watcher for /Users/asubbotin/projects/design-system (outputs)
+[NX Daemon Server] - 2024-02-18T18:39:15.179Z - Server stopped because: "10800000ms of inactivity"
+[NX Daemon Server] - 2024-02-19T05:24:40.868Z - Started listening on: /var/folders/rx/fp5sf3697cb6vb8qhhfqrgjw0000gp/T/946fb72733a032cb1926/d.sock
+[NX Daemon Server] - 2024-02-19T05:24:40.873Z - [WATCHER]: Subscribed to changes within: /Users/asubbotin/projects/design-system (native)
+[NX Daemon Server] - 2024-02-19T05:24:40.873Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-02-19T05:24:40.874Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-02-19T05:24:40.877Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-02-19T05:24:40.885Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-19T05:24:40.885Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-19T05:24:40.885Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-19T05:24:43.565Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-02-19T05:24:43.566Z - Time taken for 'total for creating and serializing project graph' 2687.244917035103ms
+[NX Daemon Server] - 2024-02-19T05:24:43.566Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-02-19T05:24:43.569Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-02-19T05:24:43.569Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 2688. Response time: 4.
+[NX Daemon Server] - 2024-02-19T05:24:43.576Z - [REQUEST]: Responding to the client. handleRequestFileData
+[NX Daemon Server] - 2024-02-19T05:24:43.577Z - Done responding to the client handleRequestFileData
+[NX Daemon Server] - 2024-02-19T05:24:43.577Z - Handled REQUEST_FILE_DATA. Handling time: 1. Response time: 1.
+[NX Daemon Server] - 2024-02-19T05:24:43.581Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-02-19T05:25:21.319Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-19T05:25:50.396Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-02-19T05:25:50.398Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-02-19T05:25:50.403Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-02-19T05:25:50.404Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-02-19T05:25:50.406Z - Time taken for 'total for creating and serializing project graph' 0.6051660180091858ms
+[NX Daemon Server] - 2024-02-19T05:25:50.406Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-02-19T05:25:50.419Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-02-19T05:25:50.419Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 1. Response time: 15.
+[NX Daemon Server] - 2024-02-19T05:25:50.433Z - [REQUEST]: Responding to the client. handleRequestFileData
+[NX Daemon Server] - 2024-02-19T05:25:50.452Z - Done responding to the client handleRequestFileData
+[NX Daemon Server] - 2024-02-19T05:25:50.453Z - Handled REQUEST_FILE_DATA. Handling time: 6. Response time: 20.
+[NX Daemon Server] - 2024-02-19T05:25:50.464Z - Closed a connection. Number of open connections: 0
