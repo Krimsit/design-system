@@ -1,18 +1,18 @@
 {
   "run": {
-    "command": "nx build-storybook design-system --output-dir /var/folders/rx/fp5sf3697cb6vb8qhhfqrgjw0000gp/T/chromatic--93806-qiwcsVyj0P92",
-    "startTime": "2024-02-19T05:51:14.375Z",
-    "endTime": "2024-02-19T05:51:38.062Z",
+    "command": "nx run design-system:ctest",
+    "startTime": "2024-02-19T08:55:53.952Z",
+    "endTime": "2024-02-19T08:56:22.363Z",
     "inner": false
   },
   "tasks": [
     {
-      "taskId": "design-system:build-storybook",
-      "target": "build-storybook",
+      "taskId": "design-system:ctest",
+      "target": "ctest",
       "projectName": "design-system",
-      "hash": "16374086936686674613",
-      "startTime": "2024-02-19T05:51:14.380Z",
-      "endTime": "2024-02-19T05:51:38.061Z",
+      "hash": "7001223422109531192",
+      "startTime": "2024-02-19T08:55:53.957Z",
+      "endTime": "2024-02-19T08:56:22.362Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0

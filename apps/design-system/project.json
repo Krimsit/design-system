@@ -16,7 +16,7 @@
         "passWithNoTests": true
       }
     },
-    "storybook": {
+    "serve": {
       "executor": "@nx/storybook:storybook",
       "options": {
         "port": 4400,
@@ -39,6 +39,20 @@
         "ci": {
           "quiet": true
         }
+      }
+    },
+    "ctest": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "ELECTRON_EXTRA_LAUNCH_ARGS=--remote-debugging-port=9222 npx nx e2e design-system"
+      }
+    },
+    "e2e": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/design-system/cypress.config.ts",
+        "testingType": "e2e",
+        "devServerTarget": "design-system:serve"
       }
     }
   },

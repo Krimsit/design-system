@@ -14,6 +14,9 @@
     "tslib": "^2.3.0",
     "@babel/core": "^7.14.5",
     "@babel/preset-react": "^7.14.5",
+    "@chromatic-com/cypress": "^0.5.5",
+    "@cypress/react": "^8.0.0",
+    "@cypress/webpack-preprocessor": "^6.0.1",
     "@nx/cypress": "18.0.4",
     "@nx/eslint-plugin": "18.0.4",
     "@nx/jest": "18.0.4",
@@ -41,6 +44,7 @@
     "@storybook/react-webpack5": "7.6.16",
     "@storybook/test-runner": "^0.16.0",
     "@storybook/testing-library": "^0.2.2",
+    "@storybook/testing-react": "^2.0.1",
     "@svgr/plugin-jsx": "^8.1.0",
     "@svgr/plugin-svgo": "^8.1.0",
     "@svgr/webpack": "^8.1.0",
@@ -64,6 +68,7 @@
     "chromatic": "^10.9.6",
     "commander": "^12.0.0",
     "cypress": "^13.0.0",
+    "cypress-visual-regression": "^5.0.0",
     "eslint": "8.48.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-cypress": "^2.13.4",
@@ -155,296 +160,383 @@
   ],
   "fileMap": {
     "projectFileMap": {
-      "theme": [
+      "design-system": [
         {
-          "file": "libs/shared/theme/.babelrc",
-          "hash": "5712476190361238632"
+          "file": "apps/design-system/.babelrc",
+          "hash": "2933256737198428138"
         },
         {
-          "file": "libs/shared/theme/.eslintrc.json",
-          "hash": "15946965712701950674"
+          "file": "apps/design-system/.eslintrc.json",
+          "hash": "5085885982266215096"
         },
         {
-          "file": "libs/shared/theme/README.md",
-          "hash": "3359207826875452305"
-        },
-        {
-          "file": "libs/shared/theme/project.json",
-          "hash": "15517733592465156539"
-        },
-        {
-          "file": "libs/shared/theme/src/index.ts",
-          "hash": "3552240282930762949"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/formatters/generateCode.ts",
-          "hash": "10211231898504397255",
+          "file": "apps/design-system/.storybook/main.ts",
+          "hash": "6353070666539149005",
           "deps": [
-            "npm:fs"
+            "npm:webpack-merge",
+            "npm:@storybook/react-webpack5"
           ]
         },
         {
-          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/formatters/index.ts",
-          "hash": "10684072985312019024"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/formatters/parseJsonToThemes.ts",
-          "hash": "15245771880628533009",
+          "file": "apps/design-system/.storybook/preview.ts",
+          "hash": "8205288134710802177",
           "deps": [
-            "npm:style-dictionary"
+            "npm:@storybook/addon-console"
           ]
         },
         {
-          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/generate-code/generateCollectionsTypeCode.ts",
-          "hash": "2782551927379227960",
+          "file": "apps/design-system/cypress.config.ts",
+          "hash": "7057552733827316871",
           "deps": [
-            "npm:fs"
+            "npm:@nx/cypress",
+            "npm:cypress",
+            "npm:@chromatic-com/cypress"
           ]
         },
         {
-          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/generate-code/generateComponentsTypesCode.ts",
-          "hash": "16792806168087978427",
+          "file": "apps/design-system/cypress/downloads/chromatic-archives/app-design-system-button-component-sizes-snapshot.stories.json",
+          "hash": "16281529453786309279"
+        },
+        {
+          "file": "apps/design-system/cypress/downloads/chromatic-archives/archive/app-design-system-button-component-sizes-snapshot-snapshot-1.snapshot.json",
+          "hash": "13416015709551153716"
+        },
+        {
+          "file": "apps/design-system/cypress/downloads/chromatic-archives/archive/iframe.html-4b9a87b33566409a62f93f734157776c",
+          "hash": "5295610111418730"
+        },
+        {
+          "file": "apps/design-system/cypress/downloads/chromatic-archives/archive/index.json",
+          "hash": "1004051576012704935"
+        },
+        {
+          "file": "apps/design-system/cypress/downloads/chromatic-archives/archive/main.iframe.bundle.js",
+          "hash": "6556170477460991813"
+        },
+        {
+          "file": "apps/design-system/cypress/downloads/chromatic-archives/archive/runtime~main.iframe.bundle.js",
+          "hash": "15742205823863517864"
+        },
+        {
+          "file": "apps/design-system/cypress/downloads/chromatic-archives/archive/sb-addons/a11y-8/manager-bundle.js",
+          "hash": "4911416540794417524"
+        },
+        {
+          "file": "apps/design-system/cypress/downloads/chromatic-archives/archive/sb-addons/designs-10/register-bundle.js",
+          "hash": "7368452741812241566"
+        },
+        {
+          "file": "apps/design-system/cypress/downloads/chromatic-archives/archive/sb-addons/essentials-actions-1/manager-bundle.js",
+          "hash": "7034645155067813748"
+        },
+        {
+          "file": "apps/design-system/cypress/downloads/chromatic-archives/archive/sb-addons/essentials-backgrounds-2/manager-bundle.js",
+          "hash": "13960980089025224372"
+        },
+        {
+          "file": "apps/design-system/cypress/downloads/chromatic-archives/archive/sb-addons/essentials-controls-0/manager-bundle.js",
+          "hash": "1275346520516870444",
           "deps": [
-            "npm:fs"
+            [
+              "npm:util",
+              "dynamic"
+            ]
           ]
         },
         {
-          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/generate-code/generateIndexFile.ts",
-          "hash": "11197476649799743348",
+          "file": "apps/design-system/cypress/downloads/chromatic-archives/archive/sb-addons/essentials-measure-4/manager-bundle.js",
+          "hash": "8317014680884651020"
+        },
+        {
+          "file": "apps/design-system/cypress/downloads/chromatic-archives/archive/sb-addons/essentials-outline-5/manager-bundle.js",
+          "hash": "3088803866951912100"
+        },
+        {
+          "file": "apps/design-system/cypress/downloads/chromatic-archives/archive/sb-addons/essentials-toolbars-3/manager-bundle.js",
+          "hash": "16338654052255709994"
+        },
+        {
+          "file": "apps/design-system/cypress/downloads/chromatic-archives/archive/sb-addons/interactions-6/manager-bundle.js",
+          "hash": "13512371745058706401"
+        },
+        {
+          "file": "apps/design-system/cypress/downloads/chromatic-archives/archive/sb-addons/interactions-9/manager-bundle.js",
+          "hash": "13512371745058706401"
+        },
+        {
+          "file": "apps/design-system/cypress/downloads/chromatic-archives/archive/sb-addons/viewport-7/manager-bundle.js",
+          "hash": "7294521720009317081"
+        },
+        {
+          "file": "apps/design-system/cypress/downloads/chromatic-archives/archive/sb-common-assets/fonts.css",
+          "hash": "9281641633589321825"
+        },
+        {
+          "file": "apps/design-system/cypress/downloads/chromatic-archives/archive/sb-common-assets/nunito-sans-bold-italic.woff2",
+          "hash": "16937166808963441226"
+        },
+        {
+          "file": "apps/design-system/cypress/downloads/chromatic-archives/archive/sb-common-assets/nunito-sans-bold.woff2",
+          "hash": "14169727957364227"
+        },
+        {
+          "file": "apps/design-system/cypress/downloads/chromatic-archives/archive/sb-common-assets/nunito-sans-italic.woff2",
+          "hash": "13111399484457157170"
+        },
+        {
+          "file": "apps/design-system/cypress/downloads/chromatic-archives/archive/sb-common-assets/nunito-sans-regular.woff2",
+          "hash": "13367830169426244845"
+        },
+        {
+          "file": "apps/design-system/cypress/downloads/chromatic-archives/archive/sb-manager/WithTooltip-V3YHNWJZ-LVYLGZW2.js",
+          "hash": "6542833472777580077"
+        },
+        {
+          "file": "apps/design-system/cypress/downloads/chromatic-archives/archive/sb-manager/chunk-2IXBUOFS.js",
+          "hash": "13289513081113284295"
+        },
+        {
+          "file": "apps/design-system/cypress/downloads/chromatic-archives/archive/sb-manager/chunk-INSKDKQB.js",
+          "hash": "2335462407204271848"
+        },
+        {
+          "file": "apps/design-system/cypress/downloads/chromatic-archives/archive/sb-manager/chunk-NGTUFCUO.js",
+          "hash": "478149069060076673"
+        },
+        {
+          "file": "apps/design-system/cypress/downloads/chromatic-archives/archive/sb-manager/chunk-RK5AACVS.js",
+          "hash": "18084765968296457812",
           "deps": [
-            "npm:fs"
+            [
+              "npm:util",
+              "dynamic"
+            ]
           ]
         },
         {
-          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/generate-code/generateRootTypesIndex.ts",
-          "hash": "8233774598117898689",
+          "file": "apps/design-system/cypress/downloads/chromatic-archives/archive/sb-manager/chunk-ZEU7PDD3.js",
+          "hash": "9240036239342026411"
+        },
+        {
+          "file": "apps/design-system/cypress/downloads/chromatic-archives/archive/sb-manager/runtime.js",
+          "hash": "16040118400574520665"
+        },
+        {
+          "file": "apps/design-system/cypress/downloads/chromatic-archives/archive/sb-preview/runtime.js",
+          "hash": "4179311011627866869",
           "deps": [
-            "npm:fs"
+            [
+              "npm:util",
+              "dynamic"
+            ]
           ]
         },
         {
-          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/generate-code/generateThemeTypeCode.ts",
-          "hash": "17502317527975468621",
+          "file": "apps/design-system/cypress/downloads/chromatic-archives/archive/vendors-node_modules_storybook_addon-console_dist_index_mjs-node_modules_storybook_react_dist-7748d8.iframe.bundle.js",
+          "hash": "11346928431205334168",
           "deps": [
-            "npm:fs"
+            [
+              "npm:util",
+              "dynamic"
+            ]
           ]
         },
         {
-          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/generate-code/index.ts",
-          "hash": "348231653323373316"
+          "file": "apps/design-system/cypress/e2e/app.cy.tsx",
+          "hash": "14385679800560941601"
         },
         {
-          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/generateThemesAction.ts",
-          "hash": "1952593225445721491",
+          "file": "apps/design-system/cypress/fixtures/example.json",
+          "hash": "11785586596216172004"
+        },
+        {
+          "file": "apps/design-system/cypress/support/app.po.ts",
+          "hash": "15050139299431069743"
+        },
+        {
+          "file": "apps/design-system/cypress/support/commands.ts",
+          "hash": "10609219048089192198"
+        },
+        {
+          "file": "apps/design-system/cypress/support/e2e.ts",
+          "hash": "9004754168925619874",
           "deps": [
-            "npm:fs",
-            "npm:style-dictionary"
+            "npm:@chromatic-com/cypress"
           ]
         },
         {
-          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/helpers/helpers.ts",
-          "hash": "13692180265591216690"
+          "file": "apps/design-system/cypress/support/index.ts",
+          "hash": "8653386627608712570"
         },
         {
-          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/helpers/index.ts",
-          "hash": "15041905854315984094"
+          "file": "apps/design-system/cypress/tsconfig.json",
+          "hash": "5728752303788077312"
         },
         {
-          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/index.ts",
-          "hash": "8513834887339918639"
+          "file": "apps/design-system/jest.config.ts",
+          "hash": "17822068761482228610"
         },
         {
-          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/types/formatter.ts",
-          "hash": "13054530212953818172"
+          "file": "apps/design-system/project.json",
+          "hash": "16421763897505633171"
         },
         {
-          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/types/index.ts",
-          "hash": "7955614488015958230"
+          "file": "apps/design-system/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
         },
         {
-          "file": "libs/shared/theme/src/lib/generator/actions/index.ts",
-          "hash": "17547102368296335370",
-          "deps": [
-            "npm:style-dictionary"
-          ]
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/constants/constants.ts",
-          "hash": "2977041861734290020"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/constants/index.ts",
-          "hash": "4668264859669289957"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/parsers/index.ts",
-          "hash": "185865870299253762",
-          "deps": [
-            "npm:style-dictionary"
-          ]
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/parsers/parseThemeParser/formatters/generateJson.ts",
-          "hash": "2983252824249957502"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/parsers/parseThemeParser/formatters/index.ts",
-          "hash": "12913177965259768844"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/parsers/parseThemeParser/formatters/parseMode.ts",
-          "hash": "17498282585552152948"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/parsers/parseThemeParser/formatters/parseModesToThemes.ts",
-          "hash": "4700835382425846969"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/parsers/parseThemeParser/formatters/splitModes.ts",
-          "hash": "9526275563088555"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/parsers/parseThemeParser/helpers/helpers.ts",
-          "hash": "15497765595283527082"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/parsers/parseThemeParser/helpers/index.ts",
-          "hash": "14561565941312243540"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/parsers/parseThemeParser/index.ts",
-          "hash": "944487888372324830"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/parsers/parseThemeParser/parseThemeParser.ts",
-          "hash": "15891912653699073413",
-          "deps": [
-            "npm:style-dictionary"
-          ]
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/parsers/parseThemeParser/types/index.ts",
-          "hash": "8296727800735899395"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/parsers/parseThemeParser/types/types.ts",
-          "hash": "11916111720496092977"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/theme-generator.ts",
-          "hash": "13956854314282640237",
-          "deps": [
-            "npm:core-js",
-            "npm:style-dictionary",
-            "npm:commander"
-          ]
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/transforms/index.ts",
-          "hash": "2146334074038665771"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/transforms/typographyTransform.ts",
-          "hash": "8978771426368542602",
-          "deps": [
-            "npm:style-dictionary"
-          ]
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/types/cli.ts",
-          "hash": "3051409784745362369"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/types/common.ts",
-          "hash": "2245894863944811325"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/generator/types/index.ts",
-          "hash": "13802220798516635081"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/index.ts",
-          "hash": "7741180630457194078"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/json/tokens.json",
-          "hash": "16635068231411594009"
-        },
-        {
-          "file": "libs/shared/theme/src/lib/provider/ThemeProvider.tsx",
-          "hash": "4312829391690315144",
+          "file": "apps/design-system/src/components/Tokens/Test.tsx",
+          "hash": "6295983889367286859",
           "deps": [
             "npm:react",
-            "npm:styled-components"
+            "npm:polished",
+            "npm:@storybook/theming"
           ]
         },
         {
-          "file": "libs/shared/theme/src/lib/provider/ThemeProvider.types.ts",
-          "hash": "9396639104664846859"
+          "file": "apps/design-system/src/components/Tokens/Tokens.tsx",
+          "hash": "5326358105482974110",
+          "deps": [
+            "npm:react",
+            "npm:@storybook/blocks"
+          ]
         },
         {
-          "file": "libs/shared/theme/src/lib/provider/index.ts",
-          "hash": "9934041424298716174"
+          "file": "apps/design-system/src/components/Tokens/index.ts",
+          "hash": "2232010107723940790"
         },
         {
-          "file": "libs/shared/theme/src/lib/theme/index.ts",
-          "hash": "8852772370861674269"
+          "file": "apps/design-system/src/components/index.ts",
+          "hash": "14897270591064550973"
         },
         {
-          "file": "libs/shared/theme/src/lib/theme/themes.ts",
-          "hash": "3322595020488514502"
+          "file": "apps/design-system/src/stories/components/Atoms/Button/Docs.mdx",
+          "hash": "17945470575216089656"
         },
         {
-          "file": "libs/shared/theme/src/lib/theme/types/collections/borderRadius.types.ts",
-          "hash": "2435809614729959431"
+          "file": "apps/design-system/src/stories/components/Atoms/Button/Playground.stories.tsx",
+          "hash": "10998976980119418999",
+          "deps": [
+            "npm:styled-components",
+            "shared-ui",
+            "theme",
+            "shared-icons",
+            "npm:@storybook/react"
+          ]
         },
         {
-          "file": "libs/shared/theme/src/lib/theme/types/collections/components.types.ts",
-          "hash": "12412690851897618847"
+          "file": "apps/design-system/src/stories/components/Atoms/Button/States/Colors.stories.tsx",
+          "hash": "15940996061319686267",
+          "deps": [
+            "npm:styled-components",
+            "shared-ui",
+            "shared-icons",
+            "theme",
+            "npm:@storybook/addon-actions",
+            "npm:@storybook/react"
+          ]
         },
         {
-          "file": "libs/shared/theme/src/lib/theme/types/collections/components/button.ts",
-          "hash": "5894864868344831803"
+          "file": "apps/design-system/src/stories/components/Atoms/Button/States/Disabled.stories.tsx",
+          "hash": "3492828123454653785",
+          "deps": [
+            "npm:styled-components",
+            "shared-ui",
+            "shared-icons",
+            "theme",
+            "npm:@storybook/addon-actions",
+            "npm:@storybook/react"
+          ]
         },
         {
-          "file": "libs/shared/theme/src/lib/theme/types/collections/components/index.ts",
-          "hash": "846497861675210819"
+          "file": "apps/design-system/src/stories/components/Atoms/Button/States/Loading.stories.tsx",
+          "hash": "13020408651470331437",
+          "deps": [
+            "npm:styled-components",
+            "shared-ui",
+            "shared-icons",
+            "theme",
+            "npm:@storybook/addon-actions",
+            "npm:@storybook/react"
+          ]
         },
         {
-          "file": "libs/shared/theme/src/lib/theme/types/collections/index.ts",
-          "hash": "8805183691329553784"
+          "file": "apps/design-system/src/stories/components/Atoms/Button/States/Sizes.stories.tsx",
+          "hash": "7749042252433421221",
+          "deps": [
+            "npm:styled-components",
+            "shared-ui",
+            "shared-icons",
+            "theme",
+            "npm:@storybook/addon-actions",
+            "npm:@storybook/react"
+          ]
         },
         {
-          "file": "libs/shared/theme/src/lib/theme/types/collections/palette.types.ts",
-          "hash": "11376357075580566484"
+          "file": "apps/design-system/src/stories/components/Atoms/Button/Tests.stories.tsx",
+          "hash": "2605186607463204759",
+          "deps": [
+            "npm:styled-components",
+            "npm:@storybook/testing-library",
+            "npm:@storybook/jest",
+            "shared-ui",
+            "theme",
+            "shared-icons",
+            "npm:@storybook/react"
+          ]
         },
         {
-          "file": "libs/shared/theme/src/lib/theme/types/collections/spacing.types.ts",
-          "hash": "8366775050177439869"
+          "file": "apps/design-system/src/stories/components/Atoms/Button/constants.ts",
+          "hash": "7433233980275858379"
         },
         {
-          "file": "libs/shared/theme/src/lib/theme/types/collections/tokens.types.ts",
-          "hash": "12842476778044919189"
+          "file": "apps/design-system/src/stories/main/Changelog.mdx",
+          "hash": "8675623213418659959"
         },
         {
-          "file": "libs/shared/theme/src/lib/theme/types/collections/typography.types.ts",
-          "hash": "11423609614357162469"
+          "file": "apps/design-system/src/stories/main/Overview.mdx",
+          "hash": "6487061603893799565"
         },
         {
-          "file": "libs/shared/theme/src/lib/theme/types/index.ts",
-          "hash": "12280023521125347462"
+          "file": "apps/design-system/src/stories/tokens/BorderRadius.mdx",
+          "hash": "8205555286533546112"
         },
         {
-          "file": "libs/shared/theme/src/lib/theme/types/themes.ts",
-          "hash": "16078183166028425964"
+          "file": "apps/design-system/src/stories/tokens/Branding.mdx",
+          "hash": "6655817760513854544"
         },
         {
-          "file": "libs/shared/theme/tsconfig.json",
-          "hash": "12459014667702660822"
+          "file": "apps/design-system/src/stories/tokens/Palette.mdx",
+          "hash": "5975812774218119616"
         },
         {
-          "file": "libs/shared/theme/tsconfig.lib.json",
-          "hash": "12782505187182166395"
+          "file": "apps/design-system/src/stories/tokens/Spacing.mdx",
+          "hash": "12057095428176679690"
+        },
+        {
+          "file": "apps/design-system/tsconfig.app.json",
+          "hash": "4580231268695066544"
+        },
+        {
+          "file": "apps/design-system/tsconfig.json",
+          "hash": "9283612499803881146"
+        },
+        {
+          "file": "apps/design-system/tsconfig.spec.json",
+          "hash": "11378287594513225419"
+        },
+        {
+          "file": "apps/design-system/tsconfig.storybook.json",
+          "hash": "9877693811502968150"
+        },
+        {
+          "file": "apps/design-system/webpack.config.js",
+          "hash": "4821333721764827022",
+          "deps": [
+            "npm:@nx/webpack",
+            "npm:@nx/react",
+            "npm:path"
+          ]
         }
       ],
       "shared-icons": [
@@ -6347,6 +6439,298 @@
           "hash": "7672594924500069316"
         }
       ],
+      "theme": [
+        {
+          "file": "libs/shared/theme/.babelrc",
+          "hash": "5712476190361238632"
+        },
+        {
+          "file": "libs/shared/theme/.eslintrc.json",
+          "hash": "15946965712701950674"
+        },
+        {
+          "file": "libs/shared/theme/README.md",
+          "hash": "3359207826875452305"
+        },
+        {
+          "file": "libs/shared/theme/project.json",
+          "hash": "15517733592465156539"
+        },
+        {
+          "file": "libs/shared/theme/src/index.ts",
+          "hash": "3552240282930762949"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/formatters/generateCode.ts",
+          "hash": "10211231898504397255",
+          "deps": [
+            "npm:fs"
+          ]
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/formatters/index.ts",
+          "hash": "10684072985312019024"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/formatters/parseJsonToThemes.ts",
+          "hash": "15245771880628533009",
+          "deps": [
+            "npm:style-dictionary"
+          ]
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/generate-code/generateCollectionsTypeCode.ts",
+          "hash": "2782551927379227960",
+          "deps": [
+            "npm:fs"
+          ]
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/generate-code/generateComponentsTypesCode.ts",
+          "hash": "16792806168087978427",
+          "deps": [
+            "npm:fs"
+          ]
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/generate-code/generateIndexFile.ts",
+          "hash": "11197476649799743348",
+          "deps": [
+            "npm:fs"
+          ]
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/generate-code/generateRootTypesIndex.ts",
+          "hash": "8233774598117898689",
+          "deps": [
+            "npm:fs"
+          ]
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/generate-code/generateThemeTypeCode.ts",
+          "hash": "17502317527975468621",
+          "deps": [
+            "npm:fs"
+          ]
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/generate-code/index.ts",
+          "hash": "348231653323373316"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/generateThemesAction.ts",
+          "hash": "1952593225445721491",
+          "deps": [
+            "npm:fs",
+            "npm:style-dictionary"
+          ]
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/helpers/helpers.ts",
+          "hash": "13692180265591216690"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/helpers/index.ts",
+          "hash": "15041905854315984094"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/index.ts",
+          "hash": "8513834887339918639"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/types/formatter.ts",
+          "hash": "13054530212953818172"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/actions/generateThemesAction/types/index.ts",
+          "hash": "7955614488015958230"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/actions/index.ts",
+          "hash": "17547102368296335370",
+          "deps": [
+            "npm:style-dictionary"
+          ]
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/constants/constants.ts",
+          "hash": "2977041861734290020"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/constants/index.ts",
+          "hash": "4668264859669289957"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/parsers/index.ts",
+          "hash": "185865870299253762",
+          "deps": [
+            "npm:style-dictionary"
+          ]
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/parsers/parseThemeParser/formatters/generateJson.ts",
+          "hash": "2983252824249957502"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/parsers/parseThemeParser/formatters/index.ts",
+          "hash": "12913177965259768844"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/parsers/parseThemeParser/formatters/parseMode.ts",
+          "hash": "17498282585552152948"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/parsers/parseThemeParser/formatters/parseModesToThemes.ts",
+          "hash": "4700835382425846969"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/parsers/parseThemeParser/formatters/splitModes.ts",
+          "hash": "9526275563088555"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/parsers/parseThemeParser/helpers/helpers.ts",
+          "hash": "15497765595283527082"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/parsers/parseThemeParser/helpers/index.ts",
+          "hash": "14561565941312243540"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/parsers/parseThemeParser/index.ts",
+          "hash": "944487888372324830"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/parsers/parseThemeParser/parseThemeParser.ts",
+          "hash": "15891912653699073413",
+          "deps": [
+            "npm:style-dictionary"
+          ]
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/parsers/parseThemeParser/types/index.ts",
+          "hash": "8296727800735899395"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/parsers/parseThemeParser/types/types.ts",
+          "hash": "11916111720496092977"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/theme-generator.ts",
+          "hash": "13956854314282640237",
+          "deps": [
+            "npm:core-js",
+            "npm:style-dictionary",
+            "npm:commander"
+          ]
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/transforms/index.ts",
+          "hash": "2146334074038665771"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/transforms/typographyTransform.ts",
+          "hash": "8978771426368542602",
+          "deps": [
+            "npm:style-dictionary"
+          ]
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/types/cli.ts",
+          "hash": "3051409784745362369"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/types/common.ts",
+          "hash": "2245894863944811325"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/generator/types/index.ts",
+          "hash": "13802220798516635081"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/index.ts",
+          "hash": "7741180630457194078"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/json/tokens.json",
+          "hash": "16635068231411594009"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/provider/ThemeProvider.tsx",
+          "hash": "4312829391690315144",
+          "deps": [
+            "npm:react",
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "libs/shared/theme/src/lib/provider/ThemeProvider.types.ts",
+          "hash": "9396639104664846859"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/provider/index.ts",
+          "hash": "9934041424298716174"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/theme/index.ts",
+          "hash": "8852772370861674269"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/theme/themes.ts",
+          "hash": "3322595020488514502"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/theme/types/collections/borderRadius.types.ts",
+          "hash": "2435809614729959431"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/theme/types/collections/components.types.ts",
+          "hash": "12412690851897618847"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/theme/types/collections/components/button.ts",
+          "hash": "5894864868344831803"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/theme/types/collections/components/index.ts",
+          "hash": "846497861675210819"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/theme/types/collections/index.ts",
+          "hash": "8805183691329553784"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/theme/types/collections/palette.types.ts",
+          "hash": "11376357075580566484"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/theme/types/collections/spacing.types.ts",
+          "hash": "8366775050177439869"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/theme/types/collections/tokens.types.ts",
+          "hash": "12842476778044919189"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/theme/types/collections/typography.types.ts",
+          "hash": "11423609614357162469"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/theme/types/index.ts",
+          "hash": "12280023521125347462"
+        },
+        {
+          "file": "libs/shared/theme/src/lib/theme/types/themes.ts",
+          "hash": "16078183166028425964"
+        },
+        {
+          "file": "libs/shared/theme/tsconfig.json",
+          "hash": "12459014667702660822"
+        },
+        {
+          "file": "libs/shared/theme/tsconfig.lib.json",
+          "hash": "12782505187182166395"
+        }
+      ],
       "shared-ui": [
         {
           "file": "libs/shared/ui/.babelrc",
@@ -6406,7 +6790,7 @@
         },
         {
           "file": "libs/shared/ui/src/lib/components/molecules/Button/Button.constants.ts",
-          "hash": "8526756531591560001"
+          "hash": "17019302667954439266"
         },
         {
           "file": "libs/shared/ui/src/lib/components/molecules/Button/Button.styles.ts",
@@ -6560,197 +6944,6 @@
           "file": "libs/shared/ui/tsconfig.lib.json",
           "hash": "6524832850811382488"
         }
-      ],
-      "design-system": [
-        {
-          "file": "apps/design-system/.babelrc",
-          "hash": "2933256737198428138"
-        },
-        {
-          "file": "apps/design-system/.eslintrc.json",
-          "hash": "11012487992710232822"
-        },
-        {
-          "file": "apps/design-system/.storybook/main.ts",
-          "hash": "6353070666539149005",
-          "deps": [
-            "npm:webpack-merge",
-            "npm:@storybook/react-webpack5"
-          ]
-        },
-        {
-          "file": "apps/design-system/.storybook/preview.ts",
-          "hash": "8205288134710802177",
-          "deps": [
-            "npm:@storybook/addon-console"
-          ]
-        },
-        {
-          "file": "apps/design-system/jest.config.ts",
-          "hash": "17822068761482228610"
-        },
-        {
-          "file": "apps/design-system/project.json",
-          "hash": "16119926644991438294"
-        },
-        {
-          "file": "apps/design-system/src/assets/.gitkeep",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/design-system/src/components/Tokens/Test.tsx",
-          "hash": "6295983889367286859",
-          "deps": [
-            "npm:react",
-            "npm:polished",
-            "npm:@storybook/theming"
-          ]
-        },
-        {
-          "file": "apps/design-system/src/components/Tokens/Tokens.tsx",
-          "hash": "5326358105482974110",
-          "deps": [
-            "npm:react",
-            "npm:@storybook/blocks"
-          ]
-        },
-        {
-          "file": "apps/design-system/src/components/Tokens/index.ts",
-          "hash": "2232010107723940790"
-        },
-        {
-          "file": "apps/design-system/src/components/index.ts",
-          "hash": "14897270591064550973"
-        },
-        {
-          "file": "apps/design-system/src/stories/components/Atoms/Button/Docs.mdx",
-          "hash": "17945470575216089656"
-        },
-        {
-          "file": "apps/design-system/src/stories/components/Atoms/Button/Playground.stories.tsx",
-          "hash": "10998976980119418999",
-          "deps": [
-            "npm:styled-components",
-            "shared-ui",
-            "theme",
-            "shared-icons",
-            "npm:@storybook/react"
-          ]
-        },
-        {
-          "file": "apps/design-system/src/stories/components/Atoms/Button/States/Colors.stories.tsx",
-          "hash": "15940996061319686267",
-          "deps": [
-            "npm:styled-components",
-            "shared-ui",
-            "shared-icons",
-            "theme",
-            "npm:@storybook/addon-actions",
-            "npm:@storybook/react"
-          ]
-        },
-        {
-          "file": "apps/design-system/src/stories/components/Atoms/Button/States/Disabled.stories.tsx",
-          "hash": "3492828123454653785",
-          "deps": [
-            "npm:styled-components",
-            "shared-ui",
-            "shared-icons",
-            "theme",
-            "npm:@storybook/addon-actions",
-            "npm:@storybook/react"
-          ]
-        },
-        {
-          "file": "apps/design-system/src/stories/components/Atoms/Button/States/Loading.stories.tsx",
-          "hash": "13020408651470331437",
-          "deps": [
-            "npm:styled-components",
-            "shared-ui",
-            "shared-icons",
-            "theme",
-            "npm:@storybook/addon-actions",
-            "npm:@storybook/react"
-          ]
-        },
-        {
-          "file": "apps/design-system/src/stories/components/Atoms/Button/States/Sizes.stories.tsx",
-          "hash": "7749042252433421221",
-          "deps": [
-            "npm:styled-components",
-            "shared-ui",
-            "shared-icons",
-            "theme",
-            "npm:@storybook/addon-actions",
-            "npm:@storybook/react"
-          ]
-        },
-        {
-          "file": "apps/design-system/src/stories/components/Atoms/Button/Tests.stories.tsx",
-          "hash": "2605186607463204759",
-          "deps": [
-            "npm:styled-components",
-            "npm:@storybook/testing-library",
-            "npm:@storybook/jest",
-            "shared-ui",
-            "theme",
-            "shared-icons",
-            "npm:@storybook/react"
-          ]
-        },
-        {
-          "file": "apps/design-system/src/stories/components/Atoms/Button/constants.ts",
-          "hash": "7433233980275858379"
-        },
-        {
-          "file": "apps/design-system/src/stories/main/Changelog.mdx",
-          "hash": "8675623213418659959"
-        },
-        {
-          "file": "apps/design-system/src/stories/main/Overview.mdx",
-          "hash": "6487061603893799565"
-        },
-        {
-          "file": "apps/design-system/src/stories/tokens/BorderRadius.mdx",
-          "hash": "8205555286533546112"
-        },
-        {
-          "file": "apps/design-system/src/stories/tokens/Branding.mdx",
-          "hash": "6655817760513854544"
-        },
-        {
-          "file": "apps/design-system/src/stories/tokens/Palette.mdx",
-          "hash": "5975812774218119616"
-        },
-        {
-          "file": "apps/design-system/src/stories/tokens/Spacing.mdx",
-          "hash": "12057095428176679690"
-        },
-        {
-          "file": "apps/design-system/tsconfig.app.json",
-          "hash": "4580231268695066544"
-        },
-        {
-          "file": "apps/design-system/tsconfig.json",
-          "hash": "626320149821832630"
-        },
-        {
-          "file": "apps/design-system/tsconfig.spec.json",
-          "hash": "11378287594513225419"
-        },
-        {
-          "file": "apps/design-system/tsconfig.storybook.json",
-          "hash": "9877693811502968150"
-        },
-        {
-          "file": "apps/design-system/webpack.config.js",
-          "hash": "4821333721764827022",
-          "deps": [
-            "npm:@nx/webpack",
-            "npm:@nx/react",
-            "npm:path"
-          ]
-        }
       ]
     },
     "nonProjectFiles": [
@@ -6767,8 +6960,12 @@
         "hash": "17866138117546000433"
       },
       {
+        "file": ".github/workflows/chromatic.yml",
+        "hash": "13541321685165323922"
+      },
+      {
         "file": ".gitignore",
-        "hash": "1960289168718619015"
+        "hash": "3556807866287013241"
       },
       {
         "file": ".prettierignore",
@@ -6788,7 +6985,11 @@
       },
       {
         "file": "build-storybook.log",
-        "hash": "2937099324035511264"
+        "hash": "410987133958740396"
+      },
+      {
+        "file": "cypress.config.ts",
+        "hash": "4742726414124773716"
       },
       {
         "file": "jest.config.ts",
@@ -6804,11 +7005,11 @@
       },
       {
         "file": "package-lock.json",
-        "hash": "10813365465816253916"
+        "hash": "5510344052796357097"
       },
       {
         "file": "package.json",
-        "hash": "13781604243669380610"
+        "hash": "5988197913727603945"
       },
       {
         "file": "tsconfig.base.json",

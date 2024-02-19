@@ -1001,3 +1001,547 @@ CreateNodesError: Unable to create nodes for package-lock.json using plugin nx/j
       at async processFilesAndCreateAndSerializeProjectGraph (/Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/project-graph-incremental-recomputation.js:140:28)
 }
 [NX Daemon Server] - 2024-02-19T05:38:13.052Z - Done responding to the client null
+[NX Daemon Server] - 2024-02-19T07:59:51.776Z - Started listening on: /var/folders/rx/fp5sf3697cb6vb8qhhfqrgjw0000gp/T/946fb72733a032cb1926/d.sock
+[NX Daemon Server] - 2024-02-19T07:59:51.778Z - [WATCHER]: Subscribed to changes within: /Users/asubbotin/projects/design-system (native)
+[NX Daemon Server] - 2024-02-19T07:59:51.786Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-02-19T07:59:51.787Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-02-19T07:59:51.788Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-02-19T07:59:51.790Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-19T07:59:51.790Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-19T07:59:51.790Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-19T07:59:52.389Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-02-19T07:59:52.390Z - Time taken for 'total for creating and serializing project graph' 600.1043750047684ms
+[NX Daemon Server] - 2024-02-19T07:59:52.390Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-02-19T07:59:52.392Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-02-19T07:59:52.392Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 600. Response time: 4.
+[NX Daemon Server] - 2024-02-19T07:59:52.396Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-02-19T07:59:54.407Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-19T07:59:54.408Z - [WATCHER]: apps/design-system/project.json was modified
+[NX Daemon Server] - 2024-02-19T07:59:54.409Z - [REQUEST]: Responding to the client. File watch changed
+[NX Daemon Server] - 2024-02-19T07:59:54.409Z - Done responding to the client File watch changed
+[NX Daemon Server] - 2024-02-19T07:59:54.409Z - Handled FILE-WATCH-CHANGED. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2024-02-19T07:59:54.409Z - Time taken for 'changed-projects' 0.26087498664855957ms
+[NX Daemon Server] - 2024-02-19T07:59:54.512Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-19T07:59:54.512Z - [REQUEST]: apps/design-system/project.json
+[NX Daemon Server] - 2024-02-19T07:59:54.512Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-19T07:59:55.081Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-19T07:59:55.082Z - Time taken for 'hash changed files from watcher' 2.439750015735626ms
+Unable to create nodes for apps/design-system/jest.config.ts using plugin @nx/jest/plugin. 
+
+	 Inner Error: [31m[1m[1m●[22m[1m Validation Error[22m:[39m
+[31m[39m
+[31m  Option [1m"displayName"[22m must be of type:[39m
+[31m    [1m[32marray[39m[31m[22m[39m
+[31m  but instead received:[39m
+[31m    [1m[31mstring[39m[31m[22m[39m
+[31m[39m
+[31m  Example:[39m
+[31m  {[39m
+[31m    [1m"displayName"[22m: [1m[[22m[39m
+[31m[1m      "test-config",[22m[39m
+[31m[1m      {[22m[39m
+[31m[1m        "color": "blue",[22m[39m
+[31m[1m        "name": "test-config"[22m[39m
+[31m[1m      }[22m[39m
+[31m[1m    ][22m[39m
+[31m  }[39m
+[31m[39m
+[31m  [1mConfiguration Documentation:[22m[39m
+[31m  https://jestjs.io/docs/configuration[39m
+[31m[39m
+[NX Daemon Server] - 2024-02-19T07:59:59.828Z - [WATCHER]: 7 file(s) created or restored, 3 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2024-02-19T07:59:59.829Z - [REQUEST]: Responding to the client. File watch changed
+[NX Daemon Server] - 2024-02-19T07:59:59.829Z - Done responding to the client File watch changed
+[NX Daemon Server] - 2024-02-19T07:59:59.829Z - Handled FILE-WATCH-CHANGED. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2024-02-19T07:59:59.829Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-19T07:59:59.829Z - Time taken for 'changed-projects' 0.21254199743270874ms
+[NX Daemon Server] - 2024-02-19T07:59:59.933Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-19T07:59:59.933Z - [REQUEST]: apps/design-system/project.json,apps/design-system/cypress/fixtures/example.json,apps/design-system/cypress.config.ts,apps/design-system/cypress/support/e2e.ts,apps/design-system/cypress/support/app.po.ts,apps/design-system/cypress/support/commands.ts,apps/design-system/cypress/e2e/app.cy.ts,apps/design-system/cypress/tsconfig.json,apps/design-system/tsconfig.json,apps/design-system/.eslintrc.json
+[NX Daemon Server] - 2024-02-19T07:59:59.933Z - [REQUEST]: 
+Unable to create nodes for apps/design-system/jest.config.ts using plugin @nx/jest/plugin. 
+
+	 Inner Error: [31m[1m[1m●[22m[1m Validation Error[22m:[39m
+[31m[39m
+[31m  Option [1m"displayName"[22m must be of type:[39m
+[31m    [1m[32marray[39m[31m[22m[39m
+[31m  but instead received:[39m
+[31m    [1m[31mstring[39m[31m[22m[39m
+[31m[39m
+[31m  Example:[39m
+[31m  {[39m
+[31m    [1m"displayName"[22m: [1m[[22m[39m
+[31m[1m      "test-config",[22m[39m
+[31m[1m      {[22m[39m
+[31m[1m        "color": "blue",[22m[39m
+[31m[1m        "name": "test-config"[22m[39m
+[31m[1m      }[22m[39m
+[31m[1m    ][22m[39m
+[31m  }[39m
+[31m[39m
+[31m  [1mConfiguration Documentation:[22m[39m
+[31m  https://jestjs.io/docs/configuration[39m
+[31m[39m
+[NX Daemon Server] - 2024-02-19T08:00:00.342Z - [REQUEST]: Responding to the client. File watch changed
+[NX Daemon Server] - 2024-02-19T08:00:00.342Z - Done responding to the client File watch changed
+[NX Daemon Server] - 2024-02-19T08:00:00.342Z - Handled FILE-WATCH-CHANGED. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2024-02-19T08:00:00.342Z - Time taken for 'hash changed files from watcher' 4.232415974140167ms
+[NX Daemon Server] - 2024-02-19T08:00:24.465Z - [WATCHER]: apps/design-system/cypress/support/e2e.ts was modified
+[NX Daemon Server] - 2024-02-19T08:00:24.467Z - [REQUEST]: Responding to the client. File watch changed
+[NX Daemon Server] - 2024-02-19T08:00:24.468Z - Done responding to the client File watch changed
+[NX Daemon Server] - 2024-02-19T08:00:24.468Z - Handled FILE-WATCH-CHANGED. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2024-02-19T08:00:24.468Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-19T08:00:24.468Z - Time taken for 'changed-projects' 0.48137497901916504ms
+[NX Daemon Server] - 2024-02-19T08:00:24.676Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-19T08:00:24.677Z - [REQUEST]: apps/design-system/project.json,apps/design-system/cypress/fixtures/example.json,apps/design-system/cypress.config.ts,apps/design-system/cypress/support/e2e.ts,apps/design-system/cypress/support/app.po.ts,apps/design-system/cypress/support/commands.ts,apps/design-system/cypress/e2e/app.cy.ts,apps/design-system/cypress/tsconfig.json,apps/design-system/tsconfig.json,apps/design-system/.eslintrc.json
+[NX Daemon Server] - 2024-02-19T08:00:24.677Z - [REQUEST]: 
+Unable to create nodes for apps/design-system/jest.config.ts using plugin @nx/jest/plugin. 
+
+	 Inner Error: [31m[1m[1m●[22m[1m Validation Error[22m:[39m
+[31m[39m
+[31m  Option [1m"displayName"[22m must be of type:[39m
+[31m    [1m[32marray[39m[31m[22m[39m
+[31m  but instead received:[39m
+[31m    [1m[31mstring[39m[31m[22m[39m
+[31m[39m
+[31m  Example:[39m
+[31m  {[39m
+[31m    [1m"displayName"[22m: [1m[[22m[39m
+[31m[1m      "test-config",[22m[39m
+[31m[1m      {[22m[39m
+[31m[1m        "color": "blue",[22m[39m
+[31m[1m        "name": "test-config"[22m[39m
+[31m[1m      }[22m[39m
+[31m[1m    ][22m[39m
+[31m  }[39m
+[31m[39m
+[31m  [1mConfiguration Documentation:[22m[39m
+[31m  https://jestjs.io/docs/configuration[39m
+[31m[39m
+[NX Daemon Server] - 2024-02-19T08:00:25.646Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-19T08:00:25.647Z - Time taken for 'hash changed files from watcher' 7.853708028793335ms
+[NX Daemon Server] - 2024-02-19T08:01:25.869Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-19T08:01:25.875Z - [WATCHER]: apps/design-system/cypress.config.ts was modified
+[NX Daemon Server] - 2024-02-19T08:01:25.876Z - [REQUEST]: Responding to the client. File watch changed
+[NX Daemon Server] - 2024-02-19T08:01:25.876Z - Done responding to the client File watch changed
+[NX Daemon Server] - 2024-02-19T08:01:25.876Z - Handled FILE-WATCH-CHANGED. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2024-02-19T08:01:25.876Z - Time taken for 'changed-projects' 0.5535839796066284ms
+[NX Daemon Server] - 2024-02-19T08:01:26.153Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-19T08:01:26.280Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-19T08:01:26.280Z - [REQUEST]: apps/design-system/project.json,apps/design-system/cypress/fixtures/example.json,apps/design-system/cypress.config.ts,apps/design-system/cypress/support/e2e.ts,apps/design-system/cypress/support/app.po.ts,apps/design-system/cypress/support/commands.ts,apps/design-system/cypress/e2e/app.cy.ts,apps/design-system/cypress/tsconfig.json,apps/design-system/tsconfig.json,apps/design-system/.eslintrc.json
+[NX Daemon Server] - 2024-02-19T08:01:26.280Z - [REQUEST]: 
+Unable to create nodes for apps/design-system/jest.config.ts using plugin @nx/jest/plugin. 
+
+	 Inner Error: [31m[1m[1m●[22m[1m Validation Error[22m:[39m
+[31m[39m
+[31m  Option [1m"displayName"[22m must be of type:[39m
+[31m    [1m[32marray[39m[31m[22m[39m
+[31m  but instead received:[39m
+[31m    [1m[31mstring[39m[31m[22m[39m
+[31m[39m
+[31m  Example:[39m
+[31m  {[39m
+[31m    [1m"displayName"[22m: [1m[[22m[39m
+[31m[1m      "test-config",[22m[39m
+[31m[1m      {[22m[39m
+[31m[1m        "color": "blue",[22m[39m
+[31m[1m        "name": "test-config"[22m[39m
+[31m[1m      }[22m[39m
+[31m[1m    ][22m[39m
+[31m  }[39m
+[31m[39m
+[31m  [1mConfiguration Documentation:[22m[39m
+[31m  https://jestjs.io/docs/configuration[39m
+[31m[39m
+[NX Daemon Server] - 2024-02-19T08:01:27.112Z - Time taken for 'hash changed files from watcher' 3.529834032058716ms
+[NX Daemon Server] - 2024-02-19T08:02:19.320Z - [WATCHER]: apps/design-system/project.json was modified
+[NX Daemon Server] - 2024-02-19T08:02:19.324Z - [REQUEST]: Responding to the client. File watch changed
+[NX Daemon Server] - 2024-02-19T08:02:19.324Z - Done responding to the client File watch changed
+[NX Daemon Server] - 2024-02-19T08:02:19.324Z - Handled FILE-WATCH-CHANGED. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2024-02-19T08:02:19.324Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-19T08:02:19.324Z - Time taken for 'changed-projects' 0.7865000367164612ms
+[NX Daemon Server] - 2024-02-19T08:02:20.125Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-19T08:02:20.126Z - [REQUEST]: apps/design-system/project.json,apps/design-system/cypress/fixtures/example.json,apps/design-system/cypress.config.ts,apps/design-system/cypress/support/e2e.ts,apps/design-system/cypress/support/app.po.ts,apps/design-system/cypress/support/commands.ts,apps/design-system/cypress/e2e/app.cy.ts,apps/design-system/cypress/tsconfig.json,apps/design-system/tsconfig.json,apps/design-system/.eslintrc.json
+[NX Daemon Server] - 2024-02-19T08:02:20.126Z - [REQUEST]: 
+Unable to create nodes for apps/design-system/jest.config.ts using plugin @nx/jest/plugin. 
+
+	 Inner Error: [31m[1m[1m●[22m[1m Validation Error[22m:[39m
+[31m[39m
+[31m  Option [1m"displayName"[22m must be of type:[39m
+[31m    [1m[32marray[39m[31m[22m[39m
+[31m  but instead received:[39m
+[31m    [1m[31mstring[39m[31m[22m[39m
+[31m[39m
+[31m  Example:[39m
+[31m  {[39m
+[31m    [1m"displayName"[22m: [1m[[22m[39m
+[31m[1m      "test-config",[22m[39m
+[31m[1m      {[22m[39m
+[31m[1m        "color": "blue",[22m[39m
+[31m[1m        "name": "test-config"[22m[39m
+[31m[1m      }[22m[39m
+[31m[1m    ][22m[39m
+[31m  }[39m
+[31m[39m
+[31m  [1mConfiguration Documentation:[22m[39m
+[31m  https://jestjs.io/docs/configuration[39m
+[31m[39m
+[NX Daemon Server] - 2024-02-19T08:02:20.721Z - Time taken for 'hash changed files from watcher' 2.755415976047516ms
+[NX Daemon Server] - 2024-02-19T08:02:21.424Z - [WATCHER]: apps/design-system/project.json was modified
+[NX Daemon Server] - 2024-02-19T08:02:21.424Z - [REQUEST]: Responding to the client. File watch changed
+[NX Daemon Server] - 2024-02-19T08:02:21.424Z - Done responding to the client File watch changed
+[NX Daemon Server] - 2024-02-19T08:02:21.424Z - Handled FILE-WATCH-CHANGED. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2024-02-19T08:02:21.424Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-19T08:02:21.424Z - Time taken for 'changed-projects' 0.17566698789596558ms
+[NX Daemon Server] - 2024-02-19T08:02:23.040Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-19T08:02:23.040Z - [REQUEST]: apps/design-system/project.json,apps/design-system/cypress/fixtures/example.json,apps/design-system/cypress.config.ts,apps/design-system/cypress/support/e2e.ts,apps/design-system/cypress/support/app.po.ts,apps/design-system/cypress/support/commands.ts,apps/design-system/cypress/e2e/app.cy.ts,apps/design-system/cypress/tsconfig.json,apps/design-system/tsconfig.json,apps/design-system/.eslintrc.json
+[NX Daemon Server] - 2024-02-19T08:02:23.040Z - [REQUEST]: 
+Unable to create nodes for apps/design-system/jest.config.ts using plugin @nx/jest/plugin. 
+
+	 Inner Error: [31m[1m[1m●[22m[1m Validation Error[22m:[39m
+[31m[39m
+[31m  Option [1m"displayName"[22m must be of type:[39m
+[31m    [1m[32marray[39m[31m[22m[39m
+[31m  but instead received:[39m
+[31m    [1m[31mstring[39m[31m[22m[39m
+[31m[39m
+[31m  Example:[39m
+[31m  {[39m
+[31m    [1m"displayName"[22m: [1m[[22m[39m
+[31m[1m      "test-config",[22m[39m
+[31m[1m      {[22m[39m
+[31m[1m        "color": "blue",[22m[39m
+[31m[1m        "name": "test-config"[22m[39m
+[31m[1m      }[22m[39m
+[31m[1m    ][22m[39m
+[31m  }[39m
+[31m[39m
+[31m  [1mConfiguration Documentation:[22m[39m
+[31m  https://jestjs.io/docs/configuration[39m
+[31m[39m
+[NX Daemon Server] - 2024-02-19T08:02:23.535Z - Time taken for 'hash changed files from watcher' 13.915333986282349ms
+[NX Daemon Server] - 2024-02-19T08:02:28.243Z - [WATCHER]: apps/design-system/project.json was modified
+[NX Daemon Server] - 2024-02-19T08:02:28.247Z - [REQUEST]: Responding to the client. File watch changed
+[NX Daemon Server] - 2024-02-19T08:02:28.247Z - Done responding to the client File watch changed
+[NX Daemon Server] - 2024-02-19T08:02:28.247Z - Handled FILE-WATCH-CHANGED. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2024-02-19T08:02:28.247Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-19T08:02:28.248Z - Time taken for 'changed-projects' 1.0409170389175415ms
+[NX Daemon Server] - 2024-02-19T08:02:28.804Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-02-19T08:02:28.804Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-02-19T08:02:31.450Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-19T08:02:31.450Z - [REQUEST]: apps/design-system/project.json,apps/design-system/cypress/fixtures/example.json,apps/design-system/cypress.config.ts,apps/design-system/cypress/support/e2e.ts,apps/design-system/cypress/support/app.po.ts,apps/design-system/cypress/support/commands.ts,apps/design-system/cypress/e2e/app.cy.ts,apps/design-system/cypress/tsconfig.json,apps/design-system/tsconfig.json,apps/design-system/.eslintrc.json
+[NX Daemon Server] - 2024-02-19T08:02:31.450Z - [REQUEST]: 
+Unable to create nodes for apps/design-system/.storybook/main.ts using plugin @nx/storybook/plugin. 
+
+	 Inner Error: Error: ValueExpected in JSON at 52:9
+[0m [90m 50 | [39m        "env": {[0m
+[0m [90m 51 | [39m          "ELECTRON_EXTRA_LAUNCH_ARGS":[0m
+[0m[31m[1m>[22m[39m[90m 52 | [39m        }[0m
+[0m [90m    | [39m        [31m[1m^[22m[39m[0m
+[0m [90m 53 | [39m      }[0m
+[0m [90m 54 | [39m    }[0m
+[0m [90m 55 | [39m  },[0m
+
+    at parseJson (/Users/asubbotin/projects/design-system/node_modules/nx/src/utils/json.js:25:15)
+    at buildProjectName (/Users/asubbotin/projects/design-system/node_modules/@nx/storybook/src/plugins/plugin.js:226:52)
+    at exports.createNodes (/Users/asubbotin/projects/design-system/node_modules/@nx/storybook/src/plugins/plugin.js:49:29)
+    at buildProjectsConfigurationsFromProjectPathsAndPlugins (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/project-configuration-utils.js:148:29)
+    at createProjectConfigurations (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:89:156)
+    at _retrieveProjectConfigurations (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:61:12)
+    at retrieveProjectConfigurations (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:46:12)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async processFilesAndCreateAndSerializeProjectGraph (/Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/project-graph-incremental-recomputation.js:140:28)
+    at async Timeout._onTimeout (/Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/project-graph-incremental-recomputation.js:81:13)
+Unable to create nodes for apps/design-system/webpack.config.js using plugin @nx/webpack/plugin. 
+
+	 Inner Error: Error: ValueExpected in apps/design-system/project.json at 52:9
+[0m [90m 50 | [39m        "env": {[0m
+[0m [90m 51 | [39m          "ELECTRON_EXTRA_LAUNCH_ARGS":[0m
+[0m[31m[1m>[22m[39m[90m 52 | [39m        }[0m
+[0m [90m    | [39m        [31m[1m^[22m[39m[0m
+[0m [90m 53 | [39m      }[0m
+[0m [90m 54 | [39m    }[0m
+[0m [90m 55 | [39m  },[0m
+
+    at parseJson (/Users/asubbotin/projects/design-system/node_modules/nx/src/utils/json.js:25:15)
+    at readJsonFile (/Users/asubbotin/projects/design-system/node_modules/nx/src/utils/fileutils.js:22:37)
+    at getNamedInputs (/Users/asubbotin/projects/design-system/node_modules/@nx/devkit/src/utils/get-named-inputs.js:14:11)
+    at createWebpackTargets (/Users/asubbotin/projects/design-system/node_modules/@nx/webpack/src/plugins/plugin.js:59:63)
+    at exports.createNodes (/Users/asubbotin/projects/design-system/node_modules/@nx/webpack/src/plugins/plugin.js:47:21)
+    at buildProjectsConfigurationsFromProjectPathsAndPlugins (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/project-configuration-utils.js:148:29)
+    at createProjectConfigurations (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:89:156)
+    at _retrieveProjectConfigurations (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:61:12)
+    at retrieveProjectConfigurations (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:46:12)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Unable to create nodes for apps/design-system/jest.config.ts using plugin @nx/jest/plugin. 
+
+	 Inner Error: [31m[1m[1m●[22m[1m Validation Error[22m:[39m
+[31m[39m
+[31m  Option [1m"displayName"[22m must be of type:[39m
+[31m    [1m[32marray[39m[31m[22m[39m
+[31m  but instead received:[39m
+[31m    [1m[31mstring[39m[31m[22m[39m
+[31m[39m
+[31m  Example:[39m
+[31m  {[39m
+[31m    [1m"displayName"[22m: [1m[[22m[39m
+[31m[1m      "test-config",[22m[39m
+[31m[1m      {[22m[39m
+[31m[1m        "color": "blue",[22m[39m
+[31m[1m        "name": "test-config"[22m[39m
+[31m[1m      }[22m[39m
+[31m[1m    ][22m[39m
+[31m  }[39m
+[31m[39m
+[31m  [1mConfiguration Documentation:[22m[39m
+[31m  https://jestjs.io/docs/configuration[39m
+[31m[39m
+/Users/asubbotin/projects/design-system/node_modules/nx/src/utils/json.js:25
+        throw new Error(formatParseError(input, errors[0]));
+              ^
+CreateNodesError: Unable to create nodes for apps/design-system/webpack.config.js using plugin @nx/webpack/plugin. 
+
+	 Inner Error: Error: ValueExpected in apps/design-system/project.json at 52:9
+[0m [90m 50 | [39m        "env": {[0m
+[0m [90m 51 | [39m          "ELECTRON_EXTRA_LAUNCH_ARGS":[0m
+[0m[31m[1m>[22m[39m[90m 52 | [39m        }[0m
+[0m [90m    | [39m        [31m[1m^[22m[39m[0m
+[0m [90m 53 | [39m      }[0m
+[0m [90m 54 | [39m    }[0m
+[0m [90m 55 | [39m  },[0m
+
+    at parseJson (/Users/asubbotin/projects/design-system/node_modules/nx/src/utils/json.js:25:15)
+    at readJsonFile (/Users/asubbotin/projects/design-system/node_modules/nx/src/utils/fileutils.js:22:37)
+    at getNamedInputs (/Users/asubbotin/projects/design-system/node_modules/@nx/devkit/src/utils/get-named-inputs.js:14:11)
+    at createWebpackTargets (/Users/asubbotin/projects/design-system/node_modules/@nx/webpack/src/plugins/plugin.js:59:63)
+    at exports.createNodes (/Users/asubbotin/projects/design-system/node_modules/@nx/webpack/src/plugins/plugin.js:47:21)
+    at buildProjectsConfigurationsFromProjectPathsAndPlugins (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/project-configuration-utils.js:148:29)
+    at createProjectConfigurations (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:89:156)
+    at _retrieveProjectConfigurations (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:61:12)
+    at retrieveProjectConfigurations (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:46:12)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at /Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/project-configuration-utils.js:156:35
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Promise.all (index 0) {
+  [cause]: Error: ValueExpected in apps/design-system/project.json at 52:9
+  [0m [90m 50 | [39m        "env": {[0m
+  [0m [90m 51 | [39m          "ELECTRON_EXTRA_LAUNCH_ARGS":[0m
+  [0m[31m[1m>[22m[39m[90m 52 | [39m        }[0m
+  [0m [90m    | [39m        [31m[1m^[22m[39m[0m
+  [0m [90m 53 | [39m      }[0m
+  [0m [90m 54 | [39m    }[0m
+  [0m [90m 55 | [39m  },[0m
+  
+      at parseJson (/Users/asubbotin/projects/design-system/node_modules/nx/src/utils/json.js:25:15)
+      at readJsonFile (/Users/asubbotin/projects/design-system/node_modules/nx/src/utils/fileutils.js:22:37)
+      at getNamedInputs (/Users/asubbotin/projects/design-system/node_modules/@nx/devkit/src/utils/get-named-inputs.js:14:11)
+      at createWebpackTargets (/Users/asubbotin/projects/design-system/node_modules/@nx/webpack/src/plugins/plugin.js:59:63)
+      at exports.createNodes (/Users/asubbotin/projects/design-system/node_modules/@nx/webpack/src/plugins/plugin.js:47:21)
+      at buildProjectsConfigurationsFromProjectPathsAndPlugins (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/project-configuration-utils.js:148:29)
+      at createProjectConfigurations (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:89:156)
+      at _retrieveProjectConfigurations (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:61:12)
+      at retrieveProjectConfigurations (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:46:12)
+      at processTicksAndRejections (node:internal/process/task_queues:96:5)
+}
+[NX Daemon Server] - 2024-02-19T08:12:29.284Z - Started listening on: /var/folders/rx/fp5sf3697cb6vb8qhhfqrgjw0000gp/T/946fb72733a032cb1926/d.sock
+[NX Daemon Server] - 2024-02-19T08:12:29.287Z - [WATCHER]: Subscribed to changes within: /Users/asubbotin/projects/design-system (native)
+[NX Daemon Server] - 2024-02-19T08:12:29.291Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-02-19T08:12:29.292Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-02-19T08:12:29.293Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-02-19T08:12:29.295Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-19T08:12:29.295Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-19T08:12:29.295Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-19T08:12:29.849Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-02-19T08:12:29.850Z - Time taken for 'total for creating and serializing project graph' 555.7053750157356ms
+[NX Daemon Server] - 2024-02-19T08:12:29.850Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-02-19T08:12:29.853Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-02-19T08:12:29.853Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 556. Response time: 4.
+[NX Daemon Server] - 2024-02-19T08:12:29.858Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-02-19T08:17:22.619Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-19T08:19:07.901Z - [WATCHER]: apps/design-system/project.json was modified
+[NX Daemon Server] - 2024-02-19T08:19:07.907Z - [REQUEST]: Responding to the client. File watch changed
+[NX Daemon Server] - 2024-02-19T08:19:07.907Z - Done responding to the client File watch changed
+[NX Daemon Server] - 2024-02-19T08:19:07.907Z - Handled FILE-WATCH-CHANGED. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2024-02-19T08:19:07.908Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-19T08:19:07.908Z - Time taken for 'changed-projects' 2.0367079973220825ms
+[NX Daemon Server] - 2024-02-19T08:19:08.007Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-19T08:19:08.007Z - [REQUEST]: apps/design-system/project.json
+[NX Daemon Server] - 2024-02-19T08:19:08.008Z - [REQUEST]: 
+[NX Daemon Server] - 2024-02-19T08:19:08.791Z - Time taken for 'hash changed files from watcher' 3.0233749747276306ms
+Unable to create nodes for apps/design-system/jest.config.ts using plugin @nx/jest/plugin. 
+
+	 Inner Error: [31m[1m[1m●[22m[1m Validation Error[22m:[39m
+[31m[39m
+[31m  Option [1m"displayName"[22m must be of type:[39m
+[31m    [1m[32marray[39m[31m[22m[39m
+[31m  but instead received:[39m
+[31m    [1m[31mstring[39m[31m[22m[39m
+[31m[39m
+[31m  Example:[39m
+[31m  {[39m
+[31m    [1m"displayName"[22m: [1m[[22m[39m
+[31m[1m      "test-config",[22m[39m
+[31m[1m      {[22m[39m
+[31m[1m        "color": "blue",[22m[39m
+[31m[1m        "name": "test-config"[22m[39m
+[31m[1m      }[22m[39m
+[31m[1m    ][22m[39m
+[31m  }[39m
+[31m[39m
+[31m  [1mConfiguration Documentation:[22m[39m
+[31m  https://jestjs.io/docs/configuration[39m
+[31m[39m
+[NX Daemon Server] - 2024-02-19T08:19:20.498Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-19T08:19:20.501Z - [WATCHER]: apps/design-system/project.json was modified
+[NX Daemon Server] - 2024-02-19T08:19:20.502Z - [REQUEST]: Responding to the client. File watch changed
+[NX Daemon Server] - 2024-02-19T08:19:20.502Z - Done responding to the client File watch changed
+[NX Daemon Server] - 2024-02-19T08:19:20.502Z - Handled FILE-WATCH-CHANGED. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2024-02-19T08:19:20.502Z - Time taken for 'changed-projects' 0.25037503242492676ms
+[NX Daemon Server] - 2024-02-19T08:19:20.710Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-19T08:19:20.710Z - [REQUEST]: apps/design-system/project.json
+[NX Daemon Server] - 2024-02-19T08:19:20.710Z - [REQUEST]: 
+Unable to create nodes for apps/design-system/jest.config.ts using plugin @nx/jest/plugin. 
+
+	 Inner Error: [31m[1m[1m●[22m[1m Validation Error[22m:[39m
+[31m[39m
+[31m  Option [1m"displayName"[22m must be of type:[39m
+[31m    [1m[32marray[39m[31m[22m[39m
+[31m  but instead received:[39m
+[31m    [1m[31mstring[39m[31m[22m[39m
+[31m[39m
+[31m  Example:[39m
+[31m  {[39m
+[31m    [1m"displayName"[22m: [1m[[22m[39m
+[31m[1m      "test-config",[22m[39m
+[31m[1m      {[22m[39m
+[31m[1m        "color": "blue",[22m[39m
+[31m[1m        "name": "test-config"[22m[39m
+[31m[1m      }[22m[39m
+[31m[1m    ][22m[39m
+[31m  }[39m
+[31m[39m
+[31m  [1mConfiguration Documentation:[22m[39m
+[31m  https://jestjs.io/docs/configuration[39m
+[31m[39m
+[NX Daemon Server] - 2024-02-19T08:19:21.463Z - Time taken for 'hash changed files from watcher' 7.190999984741211ms
+[NX Daemon Server] - 2024-02-19T08:19:21.541Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-19T08:21:21.582Z - [WATCHER]: apps/design-system/project.json was modified
+[NX Daemon Server] - 2024-02-19T08:21:21.584Z - [REQUEST]: Responding to the client. File watch changed
+[NX Daemon Server] - 2024-02-19T08:21:21.584Z - Done responding to the client File watch changed
+[NX Daemon Server] - 2024-02-19T08:21:21.584Z - Handled FILE-WATCH-CHANGED. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2024-02-19T08:21:21.584Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-02-19T08:21:21.584Z - Time taken for 'changed-projects' 0.3248339891433716ms
+[NX Daemon Server] - 2024-02-19T08:21:21.987Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-02-19T08:21:21.987Z - [REQUEST]: apps/design-system/project.json
+[NX Daemon Server] - 2024-02-19T08:21:21.987Z - [REQUEST]: 
+Unable to create nodes for apps/design-system/.storybook/main.ts using plugin @nx/storybook/plugin. 
+
+	 Inner Error: Error: ColonExpected in JSON at 51:7
+[0m [90m 49 | [39m        "devServerTarget": "design-system:serve",[0m
+[0m [90m 50 | [39m        "port"[0m
+[0m[31m[1m>[22m[39m[90m 51 | [39m      }[0m
+[0m [90m    | [39m      [31m[1m^[22m[39m[0m
+[0m [90m 52 | [39m    }[0m
+[0m [90m 53 | [39m  },[0m
+[0m [90m 54 | [39m  "tags": [][0m
+
+    at parseJson (/Users/asubbotin/projects/design-system/node_modules/nx/src/utils/json.js:25:15)
+    at buildProjectName (/Users/asubbotin/projects/design-system/node_modules/@nx/storybook/src/plugins/plugin.js:226:52)
+    at exports.createNodes (/Users/asubbotin/projects/design-system/node_modules/@nx/storybook/src/plugins/plugin.js:49:29)
+    at buildProjectsConfigurationsFromProjectPathsAndPlugins (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/project-configuration-utils.js:148:29)
+    at createProjectConfigurations (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:89:156)
+    at _retrieveProjectConfigurations (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:61:12)
+    at retrieveProjectConfigurations (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:46:12)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async processFilesAndCreateAndSerializeProjectGraph (/Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/project-graph-incremental-recomputation.js:140:28)
+    at async Timeout._onTimeout (/Users/asubbotin/projects/design-system/node_modules/nx/src/daemon/server/project-graph-incremental-recomputation.js:81:13)
+Unable to create nodes for apps/design-system/webpack.config.js using plugin @nx/webpack/plugin. 
+
+	 Inner Error: Error: ColonExpected in apps/design-system/project.json at 51:7
+[0m [90m 49 | [39m        "devServerTarget": "design-system:serve",[0m
+[0m [90m 50 | [39m        "port"[0m
+[0m[31m[1m>[22m[39m[90m 51 | [39m      }[0m
+[0m [90m    | [39m      [31m[1m^[22m[39m[0m
+[0m [90m 52 | [39m    }[0m
+[0m [90m 53 | [39m  },[0m
+[0m [90m 54 | [39m  "tags": [][0m
+
+    at parseJson (/Users/asubbotin/projects/design-system/node_modules/nx/src/utils/json.js:25:15)
+    at readJsonFile (/Users/asubbotin/projects/design-system/node_modules/nx/src/utils/fileutils.js:22:37)
+    at getNamedInputs (/Users/asubbotin/projects/design-system/node_modules/@nx/devkit/src/utils/get-named-inputs.js:14:11)
+    at createWebpackTargets (/Users/asubbotin/projects/design-system/node_modules/@nx/webpack/src/plugins/plugin.js:59:63)
+    at exports.createNodes (/Users/asubbotin/projects/design-system/node_modules/@nx/webpack/src/plugins/plugin.js:47:21)
+    at buildProjectsConfigurationsFromProjectPathsAndPlugins (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/project-configuration-utils.js:148:29)
+    at createProjectConfigurations (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:89:156)
+    at _retrieveProjectConfigurations (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:61:12)
+    at retrieveProjectConfigurations (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:46:12)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Unable to create nodes for apps/design-system/jest.config.ts using plugin @nx/jest/plugin. 
+
+	 Inner Error: [31m[1m[1m●[22m[1m Validation Error[22m:[39m
+[31m[39m
+[31m  Option [1m"displayName"[22m must be of type:[39m
+[31m    [1m[32marray[39m[31m[22m[39m
+[31m  but instead received:[39m
+[31m    [1m[31mstring[39m[31m[22m[39m
+[31m[39m
+[31m  Example:[39m
+[31m  {[39m
+[31m    [1m"displayName"[22m: [1m[[22m[39m
+[31m[1m      "test-config",[22m[39m
+[31m[1m      {[22m[39m
+[31m[1m        "color": "blue",[22m[39m
+[31m[1m        "name": "test-config"[22m[39m
+[31m[1m      }[22m[39m
+[31m[1m    ][22m[39m
+[31m  }[39m
+[31m[39m
+[31m  [1mConfiguration Documentation:[22m[39m
+[31m  https://jestjs.io/docs/configuration[39m
+[31m[39m
+/Users/asubbotin/projects/design-system/node_modules/nx/src/utils/json.js:25
+        throw new Error(formatParseError(input, errors[0]));
+              ^
+CreateNodesError: Unable to create nodes for apps/design-system/webpack.config.js using plugin @nx/webpack/plugin. 
+
+	 Inner Error: Error: ColonExpected in apps/design-system/project.json at 51:7
+[0m [90m 49 | [39m        "devServerTarget": "design-system:serve",[0m
+[0m [90m 50 | [39m        "port"[0m
+[0m[31m[1m>[22m[39m[90m 51 | [39m      }[0m
+[0m [90m    | [39m      [31m[1m^[22m[39m[0m
+[0m [90m 52 | [39m    }[0m
+[0m [90m 53 | [39m  },[0m
+[0m [90m 54 | [39m  "tags": [][0m
+
+    at parseJson (/Users/asubbotin/projects/design-system/node_modules/nx/src/utils/json.js:25:15)
+    at readJsonFile (/Users/asubbotin/projects/design-system/node_modules/nx/src/utils/fileutils.js:22:37)
+    at getNamedInputs (/Users/asubbotin/projects/design-system/node_modules/@nx/devkit/src/utils/get-named-inputs.js:14:11)
+    at createWebpackTargets (/Users/asubbotin/projects/design-system/node_modules/@nx/webpack/src/plugins/plugin.js:59:63)
+    at exports.createNodes (/Users/asubbotin/projects/design-system/node_modules/@nx/webpack/src/plugins/plugin.js:47:21)
+    at buildProjectsConfigurationsFromProjectPathsAndPlugins (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/project-configuration-utils.js:148:29)
+    at createProjectConfigurations (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:89:156)
+    at _retrieveProjectConfigurations (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:61:12)
+    at retrieveProjectConfigurations (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:46:12)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at /Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/project-configuration-utils.js:156:35
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Promise.all (index 0) {
+  [cause]: Error: ColonExpected in apps/design-system/project.json at 51:7
+  [0m [90m 49 | [39m        "devServerTarget": "design-system:serve",[0m
+  [0m [90m 50 | [39m        "port"[0m
+  [0m[31m[1m>[22m[39m[90m 51 | [39m      }[0m
+  [0m [90m    | [39m      [31m[1m^[22m[39m[0m
+  [0m [90m 52 | [39m    }[0m
+  [0m [90m 53 | [39m  },[0m
+  [0m [90m 54 | [39m  "tags": [][0m
+  
+      at parseJson (/Users/asubbotin/projects/design-system/node_modules/nx/src/utils/json.js:25:15)
+      at readJsonFile (/Users/asubbotin/projects/design-system/node_modules/nx/src/utils/fileutils.js:22:37)
+      at getNamedInputs (/Users/asubbotin/projects/design-system/node_modules/@nx/devkit/src/utils/get-named-inputs.js:14:11)
+      at createWebpackTargets (/Users/asubbotin/projects/design-system/node_modules/@nx/webpack/src/plugins/plugin.js:59:63)
+      at exports.createNodes (/Users/asubbotin/projects/design-system/node_modules/@nx/webpack/src/plugins/plugin.js:47:21)
+      at buildProjectsConfigurationsFromProjectPathsAndPlugins (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/project-configuration-utils.js:148:29)
+      at createProjectConfigurations (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:89:156)
+      at _retrieveProjectConfigurations (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:61:12)
+      at retrieveProjectConfigurations (/Users/asubbotin/projects/design-system/node_modules/nx/src/project-graph/utils/retrieve-workspace-files.js:46:12)
+      at processTicksAndRejections (node:internal/process/task_queues:96:5)
+}

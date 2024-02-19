@@ -4,7 +4,7 @@ name: 'Chromatic Deployment'
 # Event for the workflow
 on:
   pull_request:
-    types: [closed, opened]
+    types: [ closed, opened ]
     branches:
       - main
       - 'feature/**'
@@ -16,12 +16,10 @@ jobs:
     runs-on: ubuntu-latest
     # Job steps
     steps:
-      - uses: actions/checkout@v1
-      - run: yarn
-        #👇 Adds Chromatic as a step in the workflow
-      - uses: chromaui/action@v1
-        # Options required for Chromatic's GitHub Action
+      - name: Publish to Chromatic
+        uses: chromaui/action@latest
         with:
-          #👇 Chromatic projectToken, see https://storybook.js.org/tutorials/intro-to-storybook/svelte/en/deploy/ to obtain it
+          cypress: true
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
-          token: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          CHROMATIC_ARCHIVE_LOCATION=./custom/dir
