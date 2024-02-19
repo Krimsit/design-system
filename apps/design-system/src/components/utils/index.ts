@@ -1,0 +1,1 @@
+export { getValueFromObject } from './common'

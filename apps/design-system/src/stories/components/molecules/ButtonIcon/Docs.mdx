@@ -1,0 +1,68 @@
+import { Meta, Canvas, Primary, ArgsTable } from '@storybook/blocks';
+
+import * as ButtonIconMeta from './Playground.stories'
+import * as ButtonIconColors from './States/Colors.stories'
+import * as ButtonIconSizes from './States/Sizes.stories'
+import * as ButtonIconDisabled from './States/Disabled.stories'
+import * as ButtonIconLoading from './States/Loading.stories'
+import {
+  primaryStateCode,
+  secondaryStateCode,
+  errorStateCode,
+  commonStateCode,
+  sizesCode,
+  disabledCode,
+  loadingCode
+} from './constants'
+
+<Meta
+  title="Components/Molecules/ButtonIcon"
+  of={ButtonIconMeta}
+/>
+
+# ButtonIcon
+
+This is ButtonIcon component `description`
+
+<Primary />
+
+## Used components
+
+[Icon](/docs/components-atoms-icon--docs)
+
+## Colors and variants
+
+The button has four different colors:
+- primary
+- secondary
+- error
+- common
+
+As well as three different options:
+- filled
+- outlined
+- ghost
+
+<Canvas source={{ code: primaryStateCode }} of={ButtonIconColors.Primary} />
+<Canvas source={{ code: secondaryStateCode }} of={ButtonIconColors.Secondary} />
+<Canvas source={{ code: errorStateCode }} of={ButtonIconColors.Error} />
+<Canvas source={{ code: commonStateCode }} of={ButtonIconColors.Common} />
+
+## Sizes
+
+The button has four different sizes:
+- large
+- medium
+- small
+- extra-small
+
+<Canvas layout={'padded'} source={{ code: sizesCode }} of={ButtonIconSizes.Sizes} />
+
+## Disabled and Loading
+
+<Canvas layout={'padded'} source={{ code: disabledCode }} of={ButtonIconDisabled.Disabled} />
+<Canvas layout={'padded'} source={{ code: loadingCode }} of={ButtonIconLoading.Loading} />
+
+## API
+
+<ArgsTable />

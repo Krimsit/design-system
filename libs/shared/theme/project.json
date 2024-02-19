@@ -1,0 +1,26 @@
+{
+  "name": "theme",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared/theme/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/shared/theme/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "generate-theme": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "ts-node libs/shared/theme/src/lib/generator/theme-generator.ts",
+          "prettier --write libs/shared/theme/src/lib/theme"
+        ],
+        "parallel": false
+      }
+    }
+  }
+}

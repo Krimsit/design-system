@@ -1,0 +1,69 @@
+import { Meta, Canvas, Primary, ArgsTable } from '@storybook/blocks';
+
+import * as ButtonMeta from './Playground.stories'
+import * as ButtonColors from './States/Colors.stories'
+import * as ButtonSizes from './States/Sizes.stories'
+import * as ButtonDisabled from './States/Disabled.stories'
+import * as ButtonLoading from './States/Loading.stories'
+import {
+  primaryStateCode,
+  secondaryStateCode,
+  errorStateCode,
+  commonStateCode,
+  sizesCode,
+  disabledCode,
+  loadingCode
+} from './constants'
+
+<Meta
+  title="Components/Molecules/Button"
+  of={ButtonMeta}
+/>
+
+# Button
+
+This is Button component `description`
+
+<Primary />
+
+## Used components
+
+[Icon](/docs/components-atoms-icon--docs)
+[Typography](/docs/components-atoms-typography--docs)
+
+## Colors and variants
+
+The button has four different colors:
+- primary
+- secondary
+- error
+- common
+
+As well as three different options:
+- filled
+- outlined
+- ghost
+
+<Canvas source={{ code: primaryStateCode }} of={ButtonColors.Primary} />
+<Canvas source={{ code: secondaryStateCode }} of={ButtonColors.Secondary} />
+<Canvas source={{ code: errorStateCode }} of={ButtonColors.Error} />
+<Canvas source={{ code: commonStateCode }} of={ButtonColors.Common} />
+
+## Sizes
+
+The button has four different sizes:
+- large
+- medium
+- small
+- extra-small
+
+<Canvas layout={'padded'} source={{ code: sizesCode }} of={ButtonSizes.Sizes} />
+
+## Disabled and Loading
+
+<Canvas layout={'padded'} source={{ code: disabledCode }} of={ButtonDisabled.Disabled} />
+<Canvas layout={'padded'} source={{ code: loadingCode }} of={ButtonLoading.Loading} />
+
+## API
+
+<ArgsTable />

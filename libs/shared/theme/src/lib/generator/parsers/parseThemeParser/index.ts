@@ -1,0 +1,1 @@
+export { registerParseThemeParser } from './parseThemeParser'

@@ -1,0 +1,45 @@
+{
+  "name": "shared-icons",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared/icons/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/shared/icons/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "generate-commons-icons": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "ts-node libs/shared/icons/src/lib/generator/icons-generator.ts --page Icons --frame Commons --iconsPath libs/shared/icons/src/lib/icons/common",
+          "prettier --write libs/shared/icons/src/lib/icons/common/index.ts"
+        ],
+        "parallel": false
+      }
+    },
+    "generate-flags-icons": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "ts-node libs/shared/icons/src/lib/generator/icons-generator.ts --page Icons --frame Flags --iconsPath libs/shared/icons/src/lib/icons/flags",
+          "prettier --write libs/shared/icons/src/lib/icons/flags/index.ts"
+        ],
+        "parallel": false
+      }
+    },
+    "generate-icons": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "npx nx generate-commons-icons shared-icons",
+          "npx nx generate-flags-icons shared-icons"
+        ]
+      }
+    }
+  }
+}

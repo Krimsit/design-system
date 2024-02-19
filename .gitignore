@@ -37,3 +37,16 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+
+storybook-static
+
+.nx/cache
+
+apps/design-system/cypress/downloads
+
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env

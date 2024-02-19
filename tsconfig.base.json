@@ -2,19 +2,34 @@
   "compileOnSave": false,
   "compilerOptions": {
     "rootDir": ".",
+    "lib": ["es6", "dom", "dom.iterable", "es2017", "es2020", "ESNext"],
     "sourceMap": true,
     "declaration": false,
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
-    "target": "es2015",
+    "target": "es2021",
     "module": "esnext",
-    "lib": ["es2020", "dom"],
+    "typeRoots": ["./node_modules/@types"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
+    "noImplicitAny": true,
+    "noUnusedParameters": false,
+    "noEmit": true,
+    "pretty": true,
+    "noUnusedLocals": false,
+    "noImplicitThis": true,
+    "noImplicitReturns": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@shared/icon": ["libs/shared/icons/src/lib/types"],
+      "@shared/icons": ["libs/shared/icons/src/lib/icons/common"],
+      "@shared/icons-flags": ["libs/shared/icons/src/lib/icons/flags"],
+      "@shared/theme": ["libs/shared/theme/src/index.ts"],
+      "@shared/theme/objects": ["libs/shared/theme/src/lib/theme/themes.ts"],
+      "@shared/ui": ["libs/shared/ui/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

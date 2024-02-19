@@ -1,0 +1,43 @@
+import { Meta, Canvas, Primary, ArgsTable } from '@storybook/blocks';
+
+import * as ButtonGroupMeta from './Playground.stories'
+import * as Sizes from './States/Sizes.stories'
+import * as OneButtonDisabled from './States/OneButtonDisabled.stories'
+import {
+  sizes,
+  oneOfTheButtonsDisabled,
+} from './constants'
+
+<Meta
+  title="Components/Organisms/ButtonGroup"
+  of={ButtonGroupMeta}
+/>
+
+# ButtonGroup
+
+This is ButtonGroup component `description`
+
+<Primary />
+
+## Used components
+
+[Button](/docs/components-molecules-button--docs)
+[ButtonIcon](/docs/components-molecules-buttonicon--docs)
+
+## Sizes
+
+The button group has four different sizes:
+- large
+- medium
+- small
+- extra-small
+
+<Canvas layout={'padded'} source={{ code: sizes }} of={Sizes.Sizes} />
+
+## One of the button is disabled
+
+<Canvas layout={'padded'} source={{ code: oneOfTheButtonsDisabled }} of={OneButtonDisabled.OneOfTheButtonDisabled} />
+
+## API
+
+<ArgsTable />

@@ -4,74 +4,61 @@
   "sourceRoot": "apps/design-system/src",
   "projectType": "application",
   "targets": {
-    "build": {
-      "executor": "@nx/vite:build",
-      "outputs": ["{options.outputPath}"],
-      "defaultConfiguration": "production",
-      "options": {
-        "outputPath": "dist/apps/design-system"
-      },
-      "configurations": {
-        "development": {
-          "mode": "development"
-        },
-        "production": {
-          "mode": "production"
-        }
-      }
-    },
     "serve": {
-      "executor": "@nx/vite:dev-server",
-      "defaultConfiguration": "development",
+      "executor": "@nx/storybook:storybook",
       "options": {
-        "buildTarget": "design-system:build"
+        "port": 4400,
+        "configDir": "apps/design-system/.storybook"
       },
       "configurations": {
-        "development": {
-          "buildTarget": "design-system:build:development",
-          "hmr": true
-        },
-        "production": {
-          "buildTarget": "design-system:build:production",
-          "hmr": false
+        "ci": {
+          "quiet": true
         }
       }
     },
-    "preview": {
-      "executor": "@nx/vite:preview-server",
-      "defaultConfiguration": "development",
+    "build": {
+      "executor": "@nx/storybook:build",
+      "outputs": [
+        "{options.outputDir}"
+      ],
       "options": {
-        "buildTarget": "design-system:build"
+        "configDir": "apps/design-system/.storybook",
+        "outputDir": "dist/storybook/design-system"
       },
       "configurations": {
-        "development": {
-          "buildTarget": "design-system:build:development"
-        },
-        "production": {
-          "buildTarget": "design-system:build:production"
+        "ci": {
+          "quiet": true
         }
-      }
-    },
-    "test": {
-      "executor": "@nx/vite:test",
-      "outputs": ["{options.reportsDirectory}"],
-      "options": {
-        "passWithNoTests": true,
-        "reportsDirectory": "../../coverage/apps/design-system"
-      }
-    },
-    "lint": {
-      "executor": "@nx/linter:eslint",
-      "outputs": ["{options.outputFile}"],
-      "options": {
-        "lintFilePatterns": ["apps/design-system/**/*.{ts,tsx,js,jsx}"]
       }
     },
     "serve-static": {
-      "executor": "@nx/web:file-server",
+      "executor": "nx:run-commands",
       "options": {
-        "buildTarget": "design-system:build"
+        "commands": [
+          "npx nx reset",
+          "npx nx build design-system",
+          "npx http-server dist/storybook/design-system --port 4400 --silent"
+        ],
+        "parallel": false
       }
+    },
+    "interaction-test": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npx wait-on tcp:4400 && npx test-storybook --config-dir apps/design-system/.storybook --url http://localhost:4400"
+      }
+    },
+    "run-test": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npx concurrently -k -s first -n \"SB,TEST\" -c \"green,magenta,blue\" 'npx nx serve-static design-system' 'npx nx interaction-test design-system'"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": [
+        "{options.outputFile}"
+      ]
     }
   },
   "tags": []

@@ -1,0 +1,106 @@
+export type PaletteType = {
+  blue: {
+    '20': string
+    '50': string
+    '100': string
+    '200': string
+    '300': string
+    '400': string
+    '500': string
+    '600': string
+    '700': string
+    '800': string
+    '900': string
+  }
+  grey: {
+    '20': string
+    '50': string
+    '100': string
+    '200': string
+    '300': string
+    '400': string
+    '500': string
+    '600': string
+    '700': string
+    '800': string
+    '900': string
+    a75: string
+    a150: string
+    a250: string
+    a80064: string
+    a80032: string
+  }
+  green: {
+    '20': string
+    '50': string
+    '100': string
+    '200': string
+    '300': string
+    '400': string
+    '500': string
+    '600': string
+    '700': string
+    '800': string
+    '900': string
+    a550: string
+  }
+  red: {
+    '20': string
+    '50': string
+    '100': string
+    '200': string
+    '300': string
+    '400': string
+    '500': string
+    '600': string
+    '700': string
+    '800': string
+    '900': string
+    a500: string
+  }
+  orange: {
+    '20': string
+    '50': string
+    '100': string
+    '200': string
+    '300': string
+    '400': string
+    '500': string
+    '600': string
+    '700': string
+    '800': string
+    '900': string
+  }
+  purple: {
+    '20': string
+    '50': string
+    '100': string
+    '200': string
+    '300': string
+    '400': string
+    '500': string
+    '600': string
+    '700': string
+    '800': string
+    '900': string
+  }
+  common: {
+    white: string
+    black: string
+    transparent: string
+    greyBlue: string
+    greyBlueDark: string
+    yellow1: string
+    yellow2: string
+    yellow3: string
+    brown1: string
+    brown2: string
+    brown3: string
+    turquoise1: string
+    turquoise2: string
+    turquoise3: string
+    pink1: string
+    pink2: string
+    pink3: string
+  }
+}
